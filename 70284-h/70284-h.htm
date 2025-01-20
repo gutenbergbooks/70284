@@ -1,0 +1,3174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+      Dream Tapestries | Project Gutenberg
+    </title>
+    <link rel="icon" href="images/cover.jpg" type="image/x-cover">
+    <style>
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+    h1,h2,h3,h4,h5,h6 {
+    text-align: center; /* all headings centered */
+    clear: both;
+}
+
+p {
+    margin-top: .51em;
+    text-align: justify;
+    margin-bottom: .49em;
+}
+
+.p2       {margin-top: 2em;}
+.p4       {margin-top: 4em;}
+.p6       {margin-top: 6em;}
+
+hr {
+    width: 33%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 33.5%;
+    margin-right: 33.5%;
+    clear: both;
+}
+
+hr.tb   {width: 45%; margin-left: 27.5%; margin-right: 27.5%;}
+hr.chap {width: 65%; margin-left: 17.5%; margin-right: 17.5%;}
+@media print { hr.chap {display: none; visibility: hidden;} }
+hr.full {width: 95%; margin-left: 2.5%; margin-right: 2.5%;}
+
+hr.r5  {width: 5%; margin-top: 1em; margin-bottom: 1em; margin-left: 47.5%; margin-right: 47.5%;}
+hr.r65 {width: 65%; margin-top: 3em; margin-bottom: 3em; margin-left: 17.5%; margin-right: 17.5%;}
+
+div.chapter {page-break-before: always;}
+h2.nobreak  {page-break-before: avoid;}
+
+ul.index { list-style-type: none; }
+li.ifrst {
+    margin-top: 1em;
+    text-indent: -2em;
+    padding-left: 1em;
+}
+li.indx  {
+    margin-top: .5em;
+    text-indent: -2em;
+    padding-left: 1em;
+}
+li.isub1 {
+    text-indent: -2em;
+    padding-left: 2em;
+}
+li.isub2 {
+    text-indent: -2em;
+    padding-left: 3em;
+}
+li.isub3 {
+    text-indent: -2em;
+    padding-left: 4em;
+}
+li.isub4 {
+    text-indent: -2em;
+    padding-left: 5em;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+table.autotable    { border-collapse: collapse; }
+table.autotable td,
+table.autotable th { padding: 0.25em; }
+
+.tdl      {text-align: left;}
+.tdr      {text-align: right;}
+.tdc      {text-align: center;}
+
+.pagenum { /* uncomment the next line for invisible page numbers */
+    /*  visibility: hidden;  */
+    position: absolute;
+    left: 92%;
+    font-size: small;
+    text-align: right;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-indent: 0;
+} /* page numbers */
+
+.linenum {
+    position: absolute;
+    top: auto;
+    left: 4%;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+} /* poetry number */
+
+.blockquot {
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.sidenote {
+    width: 20%;
+    padding-bottom: .5em;
+    padding-top: .5em;
+    padding-left: .5em;
+    padding-right: .5em;
+    margin-left: 1em;
+    float: right;
+    clear: right;
+    margin-top: 1em;
+    font-size: small;
+    color: black;
+    background: #eeeeee;
+    border: 1px dashed;
+}
+
+.bb       {border-bottom: 2px solid;}
+
+.bl       {border-left: 2px solid;}
+
+.bt       {border-top: 2px solid;}
+
+.br       {border-right: 2px solid;}
+
+.bbox     {border: 2px solid;}
+
+.center   {text-align: center;}
+
+.right    {text-align: right;}
+
+.smcap    {font-variant: small-caps;}
+
+.allsmcap {font-variant: small-caps; text-transform: lowercase;}
+
+.u        {text-decoration: underline;}
+
+.gesperrt
+{
+    letter-spacing: 0.2em;
+    margin-right: -0.2em;
+}
+
+em.gesperrt
+{
+    font-style: normal;
+}
+
+.caption  {font-weight: bold;}
+
+/* Images */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+img.w100 {width: 100%;}
+
+
+.figcenter {
+    margin: auto;
+    text-align: center;
+    page-break-inside: avoid;
+    max-width: 100%;
+}
+
+.figleft {
+    float: left;
+    clear: left;
+    margin-left: 0;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-right: 1em;
+    padding: 0;
+    text-align: center;
+    page-break-inside: avoid;
+    max-width: 100%;
+}
+/* comment out next line and uncomment the following one for floating figleft on ebookmaker output */
+.x-ebookmaker .figleft {float: none; text-align: center; margin-right: 0;}
+/* .x-ebookmaker .figleft {float: left;} */
+
+.figright {
+    float: right;
+    clear: right;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-right: 0;
+    padding: 0;
+    text-align: center;
+    page-break-inside: avoid;
+    max-width: 100%;
+}
+/* comment out next line and uncomment the following one for floating figright on ebookmaker output */
+.x-ebookmaker .figright {float: none; text-align: center; margin-left: 0;}
+/* .x-ebookmaker .figright {float: right;} */
+
+/* Footnotes */
+.footnotes        {border: 1px dashed;}
+
+.footnote         {margin-left: 10%; margin-right: 10%; font-size: 0.9em;}
+
+.footnote .label  {position: absolute; right: 84%; text-align: right;}
+
+.fnanchor {
+    vertical-align: super;
+    font-size: .8em;
+    text-decoration:
+    none;
+}
+
+/* Poetry */
+/* uncomment the next line for centered poetry */
+/* .poetry-container {display: flex; justify-content: center;} */
+.poetry-container {text-align: center;}
+.poetry           {text-align: left; margin-left: 5%; margin-right: 5%;}
+.poetry .stanza   {margin: 1em auto;}
+.poetry .verse    {text-indent: -3em; padding-left: 3em;}
+
+/* Transcriber's notes */
+.transnote {background-color: #E6E6FA;
+    color: black;
+    font-size:small;
+    padding:0.5em;
+    margin-bottom:5em;
+    font-family:sans-serif, serif;
+}
+
+/* overrides of basic settings */
+p { text-indent: 1.5em;}
+
+table.autotable td,
+table.autotable th { padding: .3em; }
+
+.bbox     { padding: 2em;}
+
+ul { list-style-type: none; }
+
+.footnote         {
+                   padding-left: 1.5em;
+                   text-indent: -1.5em;}
+
+/* comment the next line for non-centered poetry */
+.poetry-container {display: flex; justify-content: center;}
+
+.x-ebookmaker .poetry {display: block;}
+
+.x-ebookmaker .linenum {
+    position: absolute;
+    top: auto;
+    left: 15%;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+left: 5%;
+float: left;
+clear: left;
+margin-left: -5em;
+}
+
+/* additional definitions */
+hr.double-top {width: 65%; margin-top: 3em; margin-bottom: 0.1em; margin-left: 17.5%; margin-right: 17.5%;}
+hr.double-bot {width: 65%; margin-top: 0.1em; margin-bottom: 0.5em; margin-left: 17.5%; margin-right: 17.5%;}
+
+.biblio    {list-style-type: none;
+            padding-left: 2em;
+            text-indent: -2em !important;}
+
+.noindent {text-indent: 0em}
+
+.center   {text-align: center;
+           text-indent: 0;}
+
+.credit   {text-align: right;
+           margin-top: -0.5em;}
+
+.hang { padding-left:1.5em; text-indent:-1.5em; }
+
+.ph2       {margin-top: 2em;
+           text-align: center;
+           font-size: 1.5em;
+           text-indent: 0em;
+           font-weight: bold; }
+
+.ph3       {margin-top: 1em;
+           text-align: center;
+           font-size: 1.2em;
+           text-indent: 0em;
+           font-weight: bold; }
+
+
+.ml       {margin-left: 1em;}
+
+.front {text-align: center;
+        text-indent: 0;
+        max-width: 40em;
+        margin: auto;}
+
+.x-ebookmaker .hide {visibility: hidden;}
+
+
+
+/* Text-only drop cap */
+.dropcap {
+    float: left;
+    padding-right: 0.1em;
+    font-size: 250%;
+    line-height: 10%;
+    }
+
+.x-ebookmaker .dropcap  { font-size: 100%;
+                          line-height: 100%;
+                          float: none;
+                          padding-right: 0em;}
+
+
+
+/* use this to move text closer to dropped cap if necessary */
+/* note ebookmaker cannot handle negative margins */
+.close {margin-left: -0.5em;}
+.close08 {margin-left: 0.8em;}
+.close07 {margin-left: 0.7em;}
+.close10 {margin-left: 1em;}
+.close12 {margin-left: 1.2em;}
+.close15 {margin-left: 1.5em;}
+.close18 {margin-left: 1.8em;}
+.close20 {margin-left: 2em;}
+
+.x-ebookmaker .close {margin-left: 0em;}
+.x-ebookmaker .close08 {margin-left: 0em;}
+.x-ebookmaker .close07 {margin-left: 0em;}
+.x-ebookmaker .close10 {margin-left: 0em;}
+.x-ebookmaker .close12 {margin-left: 0em;}
+.x-ebookmaker .close15 {margin-left: 0em;}
+.x-ebookmaker .close18 {margin-left: 0em;}
+.x-ebookmaker .close20 {margin-left: 0em;}
+
+.x-ebookmaker img.drop-cap
+{
+  display: none;
+}
+
+.x-ebookmaker p.drop-cap:first-letter
+{
+  color: black;
+  visibility: visible;
+  margin-left: 0.9em;
+}
+
+.x-ebookmaker .poetry .drop-cap:first-letter
+{
+  color: black;
+  visibility: visible;
+  margin-left: 0em;
+}
+
+
+.xbig {font-size: 2em;}
+.big {font-size: 1.2em;}
+.small {font-size: 0.8em;}
+
+/* Poetry indents */
+.poetry .indent10 {text-indent: 2em;}
+.poetry .indent2 {text-indent: -2em;}
+.poetry .indent6 {text-indent: 0em;}
+.poetry .indent8 {text-indent: 1em;}
+
+/* Illustration classes */
+.illowp15 {width: 15%;}
+
+
+    </style>
+</head>
+<body>
+<p style='text-align:center; font-size:1.2em; font-weight:bold'>The Project Gutenberg eBook of Dream Tapestries, by Louise Morey Bowman</p>
+<div style='display:block; margin:1em 0'>
+This eBook is for the use of anyone anywhere in the United States and
+most other parts of the world at no cost and with almost no restrictions
+whatsoever. You may copy it, give it away or re-use it under the terms
+of the Project Gutenberg License included with this eBook or online
+at <a href="https://www.gutenberg.org">www.gutenberg.org</a>. If you
+are not located in the United States, you will have to check the laws of the
+country where you are located before using this eBook.
+</div>
+
+<p style='display:block; margin-top:1em; margin-bottom:1em; margin-left:2em; text-indent:-2em'>Title: Dream Tapestries</p>
+<p style='display:block; margin-top:1em; margin-bottom:0; margin-left:2em; text-indent:-2em'>Author: Louise Morey Bowman</p>
+<p style='display:block; text-indent:0; margin:1em 0'>Release Date: March 14, 2023 [eBook #70284]</p>
+<p style='display:block; text-indent:0; margin:1em 0'>Language: English</p>
+  <p style='display:block; margin-top:1em; margin-bottom:0; margin-left:2em; text-indent:-2em; text-align:left'>Produced by: Charlene Taylor, Krista Zaleski and the Online Distributed Proofreading Team at https://www.pgdp.net (This file was produced from images generously made available by The Internet Archive)</p>
+<div style='margin-top:2em; margin-bottom:4em'>*** START OF THE PROJECT GUTENBERG EBOOK DREAM TAPESTRIES ***</div>
+
+
+
+
+
+<h1>Dream Tapestries</h1>
+
+
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+
+<p class="xbig center">  Dream Tapestries</p>
+
+<p class="center p4">  by<br>
+  <span class="big">Louise Morey Bowman</span><br>
+  <span class="small">Author of “Moonlight and Common Day”</span></p>
+</div>
+
+<div class="poetry-container p6">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">“Reason has moons, but moons not hers</div>
+    <div class="verse indent6">Lie mirrored in her sea,</div>
+    <div class="verse indent2">Confounding her astronomers</div>
+    <div class="verse indent6">But, oh! delighting me.”</div>
+  </div>
+<p class="right">  (Ralph Hodgson)
+</p>
+</div>
+</div>
+
+
+<p class="center p6">TORONTO: THE MACMILLAN COMPANY OF CANADA LIMITED, AT ST. MARTIN’S HOUSE
+MCMXXIV</p>
+
+
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+
+<p class="center p4">  Copyright, Canada, 1924<br>
+  by The Macmillan Company of Canada Limited, Toronto</p>
+
+<p class="center p6">  Printed in Canada
+</p>
+
+</div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+
+
+<p class="center p6">  TO<br>
+  ARCHIBALD ABERCROMBY BOWMAN
+</p>
+
+
+<p class="p6 noindent">I wish to acknowledge the courtesy of the editors of <i>Poetry</i>
+(Chicago), <i>The Bookman</i> (New York), <i>The Canadian Forum</i>,
+and <i>The Canadian Magazine</i>, in permitting me to reprint “Cold
+Tragedy,” “Bread and Fire,” “Moment Musical,” “Blue Moon,” and
+<span class="pagenum" id="Page_9">[Pg 9]</span>“Oranges.”</p>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<h2 class="nobreak" id="CONTENTS">CONTENTS</h2>
+</div>
+
+
+<table class="autotable">
+<tr>
+<td class="tdl"></td>
+<td class="tdr"> PAGE</td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">The Wingéd Cloak</span></td>
+<td class="tdr"> <a href="#Page_11">11</a></td>
+</tr>
+<tr>
+<td class="tdc" colspan="2"> DREAM TAPESTRIES</td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">Hyacinth</span></td>
+<td class="tdr"> <a href="#Page_15">15</a></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">Enchanted Wood</span></td>
+<td class="tdr"> <a href="#Page_16">16</a></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">Green Apples</span></td>
+<td class="tdr"> <a href="#Page_19">19</a></td>
+</tr>
+<tr>
+<td class="tdc" colspan="2"> ORANGES</td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">Oranges</span></td>
+<td class="tdr"> <a href="#Page_25">25</a></td>
+</tr>
+<tr>
+<td class="tdc" colspan="2"> THE MOUNTAIN THAT WATCHED</td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">The Mountain that Watched</span></td>
+<td class="tdr"> <a href="#Page_33">33</a></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">The Old Fruit Garden</span></td>
+<td class="tdr"> <a href="#Page_40">40</a></td>
+</tr>
+<tr>
+<td class="tdc" colspan="2"> SONGS OF WOMEN</td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">Blue Moon</span></td>
+<td class="tdr"> <a href="#Page_45">45</a></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">Mistress Mary</span></td>
+<td class="tdr"> <a href="#Page_46">46</a></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">Daffy-Down-Dilly</span></td>
+<td class="tdr"> <a href="#Page_47">47</a></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">The Birth-Night</span></td>
+<td class="tdr"> <a href="#Page_48">48</a></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">A Portrait</span></td>
+<td class="tdr"> <a href="#Page_50">50</a></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">The Song of the Willow Wand</span></td>
+<td class="tdr"> <a href="#Page_52">52</a></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">The Dead Violin</span></td>
+<td class="tdr"> <a href="#Page_54">54</a></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">A Sketch</span></td>
+<td class="tdr"> <a href="#Page_57">57</a><span class="pagenum" id="Page_10">[Pg 10]</span></td>
+</tr>
+<tr>
+<td class="tdc" colspan="2"> CINQUAINS</td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">City Child’s Easter</span></td>
+<td class="tdr"> <a href="#Page_61">61</a></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">Deep Snow</span></td>
+<td class="tdr"> <a href="#Page_62">62</a></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">Twelve Hokku on a Canadian Theme</span> </td>
+<td class="tdr"><a href="#Page_64">64</a></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">Life Sequence</span> (In the Hokku Manner)</td>
+<td class="tdr"><a href="#Page_66">66</a></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">Prayer in Scarlet and White Paint</span></td>
+<td class="tdr"> <a href="#Page_67">67</a></td>
+</tr>
+<tr>
+<td class="tdc" colspan="2"> COLD TRAGEDY</td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">Cold Tragedy</span></td>
+<td class="tdr"> <a href="#Page_71">71</a></td>
+</tr>
+<tr>
+<td class="tdc" colspan="2"> HOMESPUN</td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">Twins</span></td>
+<td class="tdr"> <a href="#Page_75">75</a></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">Bob Cooning</span></td>
+<td class="tdr"> <a href="#Page_80">80</a></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">Sympathy</span></td>
+<td class="tdr"> <a href="#Page_84">84</a></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">False Dawn</span></td>
+<td class="tdr"> <a href="#Page_85">85</a></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">The Witch</span></td>
+<td class="tdr"> <a href="#Page_86">86</a></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">The Post Box</span></td>
+<td class="tdr"> <a href="#Page_88">88</a></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">Song</span></td>
+<td class="tdr"> <a href="#Page_89">89</a></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">Bread and Fire</span></td>
+<td class="tdr"> <a href="#Page_90">90</a></td>
+</tr>
+<tr>
+<td class="tdl"> “<span class="smcap">Moment Musical</span>”</td>
+<td class="tdr"> <a href="#Page_91">91</a></td>
+</tr>
+</table>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_11">[Pg 11]</span></p>
+
+
+<h2 class="nobreak" id="THE_WINGED_CLOAK">THE WINGÉD CLOAK</h2>
+</div>
+
+
+<p><span class="pagenum" id="Page_13">[Pg 13]</span></p><div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><i><span class="dropcap">I</span> <span class="close10">DRAW</span> my cloak about me ...</i></div>
+    <div class="verse indent2"><i>Tattered and gray</i></div>
+    <div class="verse indent2"><i>To others it may be.</i></div>
+    <div class="verse indent2"><i>It seems to me</i></div>
+    <div class="verse indent2"><i>Of golden hue,</i></div>
+    <div class="verse indent2"><i>Broidered with mystic blue,</i></div>
+    <div class="verse indent2"><i>Woven each dawn anew,</i></div>
+    <div class="verse indent2"><i>And light as dew-ringed cobweb</i></div>
+    <div class="verse indent2"><i>On the grass.</i></div>
+    <div class="verse indent2"><i>Unscathed and joyously</i></div>
+    <div class="verse indent2"><i>In it I pass</i></div>
+    <div class="verse indent2"><i>Through drenching torrent, wind,</i></div>
+    <div class="verse indent2"><i>Fierce pitiless sun,</i></div>
+    <div class="verse indent2"><i>Till day is done.</i></div>
+  </div>
+</div>
+</div>
+<p><span class="pagenum" id="Page_12">[Pg 12]</span></p>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_15">[Pg 15]</span></p>
+<h2 class="nobreak" id="Dream_Tapestries">Dream Tapestries</h2>
+</div>
+
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<h3 class="nobreak" id="1">(1)<br>
+HYACINTH</h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">H</span><span class="close15">YACINTH</span> dreams in the arbour ...</div>
+    <div class="verse indent2">Just a crumpled mass of gray ...</div>
+    <div class="verse indent2">Soft ashen hair and colourless skin,</div>
+    <div class="verse indent2">Small, delicate hands blue-veined and thin ...</div>
+    <div class="verse indent2">Hyacinth dreams in the arbour</div>
+    <div class="verse indent2">And who shall say</div>
+    <div class="verse indent2">What Hyacinth dreams to-day?</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">Hyacinth dreams in the arbour</div>
+    <div class="verse indent2">And the stealthy pussy-cat creeps</div>
+    <div class="verse indent2">To her silken lap in the soft green gloom.</div>
+    <div class="verse indent2">Room for the pussy-cat, Hyacinth ... room!</div>
+    <div class="verse indent2">Hyacinth dreams, in the arbour,</div>
+    <div class="verse indent2">Of Life ... that steals and leaps</div>
+    <div class="verse indent2">Like a panther out of the shadows ...</div>
+    <div class="verse indent2">Hyacinth sleeps.</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">Hyacinth! Hyacinth! Open your eyes!</div>
+    <div class="verse indent2">Your blue blue eyes like the Grecian seas!</div>
+    <div class="verse indent2">Or Life will spring on your silken knees</div>
+    <div class="verse indent2">And waken you with a wild surprise</div>
+    <div class="verse indent2">Where you dream ... just a crumpled mass of gray.</div>
+    <div class="verse indent2">Hyacinth dreams in the arbour.</div>
+    <div class="verse indent2">Ah who shall say</div>
+    <div class="verse indent2">What Hyacinth dreams to-day?</div>
+  </div>
+</div>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_16">[Pg 16]</span></p>
+<h3 class="nobreak" id="2">(2)<br>
+ENCHANTED WOOD</h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">T</span><span class="close10">HROUGH</span> the great glowing forest,</div>
+    <div class="verse indent2">Green and dusky gold and ruddy brown,</div>
+    <div class="verse indent2">Where sunbeams filter down</div>
+    <div class="verse indent2">In showers of vibrant gold ...</div>
+    <div class="verse indent2">Through the old, old wood</div>
+    <div class="verse indent2">Passes the funeral pomp of the young, dead king.</div>
+    <div class="verse indent2">Choristers sing</div>
+    <div class="verse indent2">Strange, wailing, shuddering songs ...</div>
+    <div class="verse indent2">Old chants, so old,</div>
+    <div class="verse indent2">So desolate, drear.</div>
+    <div class="verse indent2">Heavy, deep, purple velvet drapes the bier ...</div>
+    <div class="verse indent2">Purple ... deep, passionate purple ...</div>
+    <div class="verse indent2">A regal pall</div>
+    <div class="verse indent2">Over the cold, young limbs, while the gold leaves fall</div>
+    <div class="verse indent2">On the velvet pall.</div>
+    <div class="verse indent2">On through the old wood moves</div>
+    <div class="verse indent2">The great procession;</div>
+    <div class="verse indent2">Deep, passionate purple draping the young, dead king;</div>
+    <div class="verse indent2">And the choristers sing ...</div>
+    <div class="verse indent2">And a small brown hare,</div>
+    <div class="verse indent2">Startled, in quivering panic, scurries ahead</div>
+    <div class="verse indent2">Leading the way for the king ...</div>
+    <div class="verse indent2">The king who is dead.</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent6">In a bright green dell</div>
+    <div class="verse indent6">Where they can see well,</div>
+    <div class="verse indent6">Wait the butcher, the baker,</div>
+    <div class="verse indent6">The candlestick maker.</div><span class="pagenum" id="Page_17">[Pg 17]</span>
+    <div class="verse indent6">“No more bread for he!”</div>
+    <div class="verse indent6">Says the baker.</div>
+    <div class="verse indent6">“No more meat for he!”</div>
+    <div class="verse indent6">Says the butcher.</div>
+    <div class="verse indent6">But the candlestick maker slaps his knee.</div>
+    <div class="verse indent6">“Not such a bad day this for me!</div>
+    <div class="verse indent6">No more meat and no more bread,</div>
+    <div class="verse indent6">But candles to burn at his feet and his head.</div>
+    <div class="verse indent6">Nor the living nor dead</div>
+    <div class="verse indent6">Can’t get on without me!</div>
+    <div class="verse indent6">And very very soon they’ll summon us three!”</div>
+    <div class="verse indent6">“For the Feast!” grins the butcher</div>
+    <div class="verse indent6">Wagging his head.</div>
+    <div class="verse indent6">“For the Feast!” says the baker,</div>
+    <div class="verse indent6">“They’ll soon need bread!”</div>
+    <div class="verse indent6">“Men can’t do without we!”</div>
+    <div class="verse indent6">They say, all three.</div>
+    <div class="verse indent6">So the butcher, the baker,</div>
+    <div class="verse indent6">The candlestick maker,</div>
+    <div class="verse indent6">Watch the procession from the small green dell</div>
+    <div class="verse indent6">Where they can all three see</div>
+    <div class="verse indent6">Exceedingly well.</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">So the procession</div>
+    <div class="verse indent2">Passed through the wood to the blue sea shore,</div>
+    <div class="verse indent2">And they buried the king</div>
+    <div class="verse indent2">Where the blue waves sing ...</div>
+    <div class="verse indent2">And the young king rules no more.</div>
+    <div class="verse indent2">But late that night through the lonely wood</div>
+    <div class="verse indent2">Came a slim brown maid who had understood,</div>
+    <div class="verse indent2">And mated her soul with the young, dead king,</div>
+    <div class="verse indent2">With never a priest or mass or ring ...</div><span class="pagenum" id="Page_18">[Pg 18]</span>
+    <div class="verse indent2">And she carried a dagger with poisoned tip,</div>
+    <div class="verse indent2">And pressed its point to her soft red lip ...</div>
+    <div class="verse indent2">And she lay on the grave, and died.</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">Still at the turn of the year, men say,</div>
+    <div class="verse indent2">Through the old, old forest in ghostly pageant</div>
+    <div class="verse indent2">The funeral procession passes</div>
+    <div class="verse indent2">Of the young, young king</div>
+    <div class="verse indent2">Who is dead:</div>
+    <div class="verse indent2">And the gold leaves fall</div>
+    <div class="verse indent2">On his passionate purple pall,</div>
+    <div class="verse indent2">And the small brown hare still scurries ahead</div>
+    <div class="verse indent2">As if she were leading them all.</div>
+  </div>
+</div>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_19">[Pg 19]</span></p>
+<h3 class="nobreak" id="3">(3)<br>
+GREEN APPLES</h3>
+</div>
+
+
+<p><span class="pagenum" id="Page_23">[Pg 23]</span></p><div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">T</span><span class="close10">HE</span> garden lies spattered with wet green moonlight</div>
+    <div class="verse indent2">Spilled from the night’s dark goblet;</div>
+    <div class="verse indent2">And the wraith in the garden huddles mournfully</div>
+    <div class="verse indent2">Silently watching,</div>
+    <div class="verse indent2">Upon the broad marble seat,</div>
+    <div class="verse indent2">Where white lilies and roses bloom.</div>
+    <div class="verse indent2">Wine of pale silver-green drenches the garden.</div>
+    <div class="verse indent2">The little gray wraith huddles mournfully,</div>
+    <div class="verse indent2">Silently watching.</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">
+
+<p><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span></p>
+ </div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">On that broad marble seat to-day</div>
+    <div class="verse indent2">Sat a beautiful lady ...</div>
+    <div class="verse indent2">Through the hot golden hours of the long afternoon ...</div>
+    <div class="verse indent2">Oh a beautiful lady!</div>
+    <div class="verse indent2">With a warm wicked beauty of white, and of rose,</div>
+    <div class="verse indent2">And of ebony.</div>
+    <div class="verse indent2">Over her white breasts a long green scarf falling ...</div>
+    <div class="verse indent2">Wet, bright, apple-green.</div>
+    <div class="verse indent2">Out in the orchard, laughing</div>
+    <div class="verse indent2">With clear, evil laughter ...</div>
+    <div class="verse indent2">Ice laughter ...</div>
+    <div class="verse indent2">She had gathered some little green apples</div>
+    <div class="verse indent2">And bit them with strong white teeth.</div>
+    <div class="verse indent2">“I am Eve! I am Eve in the garden ...</div><span class="pagenum" id="Page_20">[Pg 20]</span>
+    <div class="verse indent2">Come! Adam!”</div>
+    <div class="verse indent2">And he followed ... poor, passionate lover ...</div>
+    <div class="verse indent2">To the seat by the heavy white lilies and roses.</div>
+    <div class="verse indent2">(Oh far far away lie the wise castle windows</div>
+    <div class="verse indent2">Behind the rose gardens and lime trees!)</div>
+    <div class="verse indent2">But after the lovers ... after them, swiftly, swiftly,</div>
+    <div class="verse indent2">Like a fleeting gray shadow,</div>
+    <div class="verse indent2">Speeds the little gray wraith ...</div>
+    <div class="verse indent2">With feeble weak fingers of dampness</div>
+    <div class="verse indent2">Pulling with tremulous touch at his heart-strings ...</div>
+    <div class="verse indent2">Pricking like impotent tiny thorns;</div>
+    <div class="verse indent2">Nipping, and pinching, and pricking</div>
+    <div class="verse indent2">The shrivelled, black conscience of the rosy and beautiful lady.</div>
+    <div class="verse indent2">See! from the shrivelled black conscience</div>
+    <div class="verse indent2">One drop of bright, red blood,</div>
+    <div class="verse indent2">As from prick of a rose thorn ...</div>
+    <div class="verse indent2">And his heart-strings are drawn tight and knotted</div>
+    <div class="verse indent2">With tiny, weak, slipping knots</div>
+    <div class="verse indent2">Tied by feeble, damp fingers ...</div>
+    <div class="verse indent2">Slipping ... slipping ... oh slipping!</div>
+    <div class="verse indent2">But what does that matter?</div>
+    <div class="verse indent2">For Time has come to the help of the gray wraith ...</div>
+    <div class="verse indent2">Grave, gray Father Time with a handful of moments—</div>
+    <div class="verse indent2">Dust? Ashes?...</div>
+    <div class="verse indent2">He has set the rose-shrouded sundial in shadow.</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">
+
+<p><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span></p>
+ </div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">Now the broad marble seat is empty</div>
+    <div class="verse indent2">Except where gray wraith has sunk down in the moonlight</div>
+    <div class="verse indent2">Victorious.</div><span class="pagenum" id="Page_21">[Pg 21]</span>
+    <div class="verse indent2">Ah! ... the lady had dropped her bright, apple-green scarf,</div>
+    <div class="verse indent2">And it stirs like a sinuous, long snake.</div>
+    <div class="verse indent2">Is it only that one pointed corner is lifted</div>
+    <div class="verse indent2">By the stealthy, stealing, night wind?</div>
+    <div class="verse indent2">Slowly, slowly ... so feebly ...</div>
+    <div class="verse indent2">The snake lifts itself with the wind’s help,</div>
+    <div class="verse indent2">Revealing</div>
+    <div class="verse indent2">A little green apple,</div>
+    <div class="verse indent2">With some black dents where strong white teeth</div>
+    <div class="verse indent2">Have bitten it.</div>
+    <div class="verse indent2">And the small, gray wraith noiselessly moans and shudders.</div>
+    <div class="verse indent2">But what matter?</div>
+    <div class="verse indent2">For the long night passes.</div>
+    <div class="verse indent2">Only the green scarf lies harmlessly, softly,</div>
+    <div class="verse indent2">On the empty marble seat where the little gray wraith sits</div>
+    <div class="verse indent2">And watches,</div>
+    <div class="verse indent2">Victorious ...</div>
+    <div class="verse indent2">Though the green wine of moonlight is drenching</div>
+    <div class="verse indent2">The perilous garden.</div>
+  </div>
+</div>
+</div>
+<p><span class="pagenum" id="Page_22">[Pg 22]</span></p>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_25">[Pg 25]</span></p>
+<h2 class="nobreak" id="Oranges_1">Oranges</h2>
+</div>
+
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<h3 class="nobreak" id="ORANGES">ORANGES</h3>
+</div>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">A</span> <span class="close20">SMALL</span> New England village in the hills: ...</div>
+    <div class="verse indent2">The date?</div>
+    <div class="verse indent2">Oh, many, many years ago ... the season very late ...</div>
+    <div class="verse indent2">November!</div>
+    <div class="verse indent2">The conquering colours that a year must always hold</div>
+    <div class="verse indent2">Have vanished.</div>
+    <div class="verse indent2">Pale Northern Spring in tints of lilac, softest green and rose;</div>
+    <div class="verse indent2">The short hot Summer’s purple and dark green and yellow gold;</div>
+    <div class="verse indent2">The tawny richness of the harvest’s close ...</div>
+    <div class="verse indent2">All past and vanquished in this sullen cold,</div>
+    <div class="verse indent2">By sombre grays and browns, dead white and black.</div>
+    <div class="verse indent2">The tall-spired meeting-house, the school,</div>
+    <div class="verse indent2">The stiff white houses built by rigid rule,</div>
+    <div class="verse indent2">Even the village store,</div>
+    <div class="verse indent2">With hospitable, easily-opened door;</div>
+    <div class="verse indent2">And their human owners reared in godly fear,</div>
+    <div class="verse indent2">Austere, repressed,</div>
+    <div class="verse indent2">Severe ...</div>
+    <div class="verse indent2">How it all lies, before our modern eyes,</div>
+    <div class="verse indent2">So grim.</div>
+    <div class="verse indent2">Dressed in that rigid livery of nature’s gloom that suits it best.</div>
+    <div class="verse indent2">Hear their stern hymn ...</div>
+    <div class="verse indent2">Dignified, slow,</div>
+    <div class="verse indent2">Sung in proud, solemn majesty of menace and woe.</div>
+    <div class="verse indent2">“Our days as grass ... all earth is but a tomb” ...</div><span class="pagenum" id="Page_26">[Pg 26]</span>
+    <div class="verse indent2">What unfathomed gloom ...</div>
+    <div class="verse indent2">Smouldering!</div>
+  </div>
+<p class="center">(2)</p>
+  <div class="stanza">
+    <div class="verse indent2">Keen bitter winds have stripped the great elm trees,</div>
+    <div class="verse indent2">And swept the one long street</div>
+    <div class="verse indent2">Ruthlessly neat;</div>
+    <div class="verse indent2">Quite bare of all the withered, dead, brown leaves,</div>
+    <div class="verse indent2">Except for small dry heaps that meet,</div>
+    <div class="verse indent2">Trembling and mournfully rustling,</div>
+    <div class="verse indent2">Caught</div>
+    <div class="verse indent2">In the corners of the neat, white, picket fences;</div>
+    <div class="verse indent2">Or drifting</div>
+    <div class="verse indent2">Behind the pillars in the porch of the white meeting-house,</div>
+    <div class="verse indent2">Unused through the long week</div>
+    <div class="verse indent2">Except for Death.</div>
+    <div class="verse indent2">How the winds shriek about the meeting-house!</div>
+    <div class="verse indent2">(But wait before you shudder and turn away!)</div>
+    <div class="verse indent2">With the keen, icy breath of the New England hills</div>
+    <div class="verse indent2">Sharp in your nostrils,</div>
+    <div class="verse indent2">Step over the threshold of the village store,</div>
+    <div class="verse indent2">With its easily-opened door.</div>
+    <div class="verse indent2">Breathe this different air,</div>
+    <div class="verse indent2">Heavy with curiously mingled odours</div>
+    <div class="verse indent2">As if another wind had blown in there</div>
+    <div class="verse indent2">Heaps of rare</div>
+    <div class="verse indent2">Drifted salvage ...</div>
+    <div class="verse indent2">Some wild, rich wind from wild rich worlds beyond,</div>
+    <div class="verse indent2">That folk cannot entirely withhold,</div>
+    <div class="verse indent2">Even from a Puritan village long ago.</div><span class="pagenum" id="Page_27">[Pg 27]</span>
+    <div class="verse indent2">Beware ... ye righteous folk of old ...</div>
+    <div class="verse indent2">Beware!</div>
+  </div>
+<p class="center">(3)</p>
+  <div class="stanza">
+    <div class="verse indent2">Here are great foreign boxes, wisely and deftly made,</div>
+    <div class="verse indent2">That hold teas from the Orient, compactly laid;</div>
+    <div class="verse indent2">And coffee beans.</div>
+    <div class="verse indent2">Here spices, pungent and hot;</div>
+    <div class="verse indent2">Tall, blue-wrapped cones of sugar; fine and coarse salt;</div>
+    <div class="verse indent2">And finest quality of figured delaine;</div>
+    <div class="verse indent2">Dark, serviceable calico dotted and plain;</div>
+    <div class="verse indent2">Sheer delicate muslin, white as milk,</div>
+    <div class="verse indent2">And thick black silk;</div>
+    <div class="verse indent2">And broadcloth heavy and black;</div>
+    <div class="verse indent2">And much, much more ...</div>
+    <div class="verse indent2">Of quantity and quality no lack—</div>
+    <div class="verse indent2">For this is the “general store,” of a prosperous man</div>
+    <div class="verse indent2">Old and wealthy and wise,</div>
+    <div class="verse indent2">In the village eyes.</div>
+    <div class="verse indent2">Oh, Puritan New England would be clothed fittingly;</div>
+    <div class="verse indent2">And Puritan palates know,</div>
+    <div class="verse indent2">Both high and low</div>
+    <div class="verse indent2">The wholesome savour of good food</div>
+    <div class="verse indent2">When in the mood;</div>
+    <div class="verse indent2">As well as very fine</div>
+    <div class="verse indent2">Flavours in sermons by some “great divine;”</div>
+    <div class="verse indent2">Or savour of ethics proved and tried,</div>
+    <div class="verse indent2">And flavours in doctrines never very wide ...</div>
+    <div class="verse indent2">But high and pure ...</div>
+    <div class="verse indent2">(That you’ll acknowledge!)</div>
+    <div class="verse indent2">God ... but they were sure ...</div>
+    <div class="verse indent2">Those grim fine people of ours! ... another hymn ...</div><span class="pagenum" id="Page_28">[Pg 28]</span>
+    <div class="verse indent2">“Only such things as are godly and pure,</div>
+    <div class="verse indent2">Saved from consuming wrath they shall endure.”...</div>
+    <div class="verse indent2">Is that the echo of the bell</div>
+    <div class="verse indent2">From the tall-spired white meeting-house?</div>
+    <div class="verse indent2">Its bell is silent through the week, except for Death ...</div>
+    <div class="verse indent2">Hear the wind shriek about the meeting-house!</div>
+    <div class="verse indent2">But this small bell</div>
+    <div class="verse indent2">Fastened above the door</div>
+    <div class="verse indent2">Of the old village store,</div>
+    <div class="verse indent2">Tinkles continually, where through the week,</div>
+    <div class="verse indent2">They barter and buy and sell.</div>
+  </div>
+<p class="center">(4)</p>
+  <div class="stanza">
+    <div class="verse indent2">(In this short passing hour we shall see more ...)</div>
+    <div class="verse indent2">He is a man of vision and breadth of mind ...</div>
+    <div class="verse indent2">This storekeeper.</div>
+    <div class="verse indent2">Back in the dusky depths of the old store</div>
+    <div class="verse indent2">Are rows of books in sober black and brown;</div>
+    <div class="verse indent2">Books for his town</div>
+    <div class="verse indent2">That are not all volumes of sermons or hymns,</div>
+    <div class="verse indent2">Or a “Garland of Sacred Poetry from Friend to Friend.”</div>
+    <div class="verse indent2">(Does not some stern voice ask “Where will this end?”)</div>
+    <div class="verse indent2">For here are books of perilous voyages, tales of human ways,</div>
+    <div class="verse indent2">And human lives, and of the great, historic, coloured days</div>
+    <div class="verse indent2">Of far-off empires ... Ah ... here are William Shakespeare’s mighty plays!</div><span class="pagenum" id="Page_29">[Pg 29]</span>
+    <div class="verse indent2">(But we must not stop to read more titles now ... the hour is almost past)</div>
+    <div class="verse indent2">Daylight is fading fast ...</div>
+    <div class="verse indent2">And heaped on the dark, well-rubbed old counter lies his last</div>
+    <div class="verse indent2">And latest venture on seas of commerce ...</div>
+    <div class="verse indent2">Oranges!</div>
+  </div>
+<p class="center">(5)</p>
+  <div class="stanza">
+    <div class="verse indent2">Oranges ... oranges ...</div>
+    <div class="verse indent2">Great balls of golden wonder ... round, perishable globes ...</div>
+    <div class="verse indent2">Here a ripe pyramid most carefully laid</div>
+    <div class="verse indent2">Beside sad-toned materials for matrons’ robes,</div>
+    <div class="verse indent2">And piles of iron-gray wool for their men’s winter stockings ...</div>
+    <div class="verse indent2">Plain comfortable sight ... proof against sharp frost bite</div>
+    <div class="verse indent2">Of the Northern Winters.</div>
+    <div class="verse indent2">See how the oranges have caught up all the light!</div>
+    <div class="verse indent2">What joyous tones they hold</div>
+    <div class="verse indent2">Of vivid, bold,</div>
+    <div class="verse indent2">Hot colour!</div>
+    <div class="verse indent2">They glow like balls moulded of molten gold.</div>
+    <div class="verse indent2">Above them from the rafters hang thin strings and strings,</div>
+    <div class="verse indent2">Innumerable strings</div>
+    <div class="verse indent2">Of dull, dried apples!</div>
+    <div class="verse indent2">Nothing is here akin to the oranges at all ...</div>
+    <div class="verse indent2">Nothing in all</div>
+    <div class="verse indent2">This colourless, inanimate hoard ... nothing’s akin</div><span class="pagenum" id="Page_30">[Pg 30]</span>
+    <div class="verse indent2">Except that vague, enduring richness, so alluring,</div>
+    <div class="verse indent2">That we smell,</div>
+    <div class="verse indent2">When the small bell,</div>
+    <div class="verse indent2">Over the door tinkles ... and we come in ...</div>
+    <div class="verse indent2">Out of the keen, pure coldness of the wind.</div>
+  </div>
+<p class="center">(6)</p>
+  <div class="stanza">
+    <div class="verse indent2">So ... the scene is set ... for good and ill.</div>
+    <div class="verse indent2">Over the highest hill</div>
+    <div class="verse indent2">New winds blow wild and shrill:</div>
+    <div class="verse indent2">For “the old order changeth” still.</div>
+    <div class="verse indent2">Who now is sure what shall endure?</div>
+    <div class="verse indent2">The street is empty ... in the dusky store,</div>
+    <div class="verse indent2">Holding the eye with a voluptuous lure,</div>
+    <div class="verse indent2">The oranges burn through the smouldering gloom.</div>
+  </div>
+</div>
+</div>
+<p><span class="pagenum" id="Page_31">[Pg 31]</span></p>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_33">[Pg 33]</span></p>
+<h2 class="nobreak" id="The_Mountain_That_Watched_1">The Mountain That Watched</h2>
+</div>
+
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<h3 class="nobreak" id="THE_MOUNTAIN_THAT_WATCHED">THE MOUNTAIN THAT WATCHED</h3>
+</div>
+
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">“I</span><span class="close20">N</span> the beginning” ... “The heavens and the earth” ...</div>
+    <div class="verse indent2">“Let there be light” ...</div>
+    <div class="verse indent2">After all we can’t improve on Genesis</div>
+    <div class="verse indent2">After all we can’t improve on Genesis</div>
+    <div class="verse indent2">For the condensed beginning of a tale!</div>
+    <div class="verse indent2">But earth is much more earth, and heaven much more heaven</div>
+    <div class="verse indent2">When it’s our own old Mountain, touching sky</div>
+    <div class="verse indent2">Like this, right up in the middle of the island,</div>
+    <div class="verse indent2">Than when it’s a mountain range across the oceans.</div>
+    <div class="verse indent2">That’s to my way of thinking anyhow.</div>
+    <div class="verse indent2">Mountain and city ... Edinburgh now ... but that’s another’s story ...</div>
+    <div class="verse indent2">Sonnet form!</div>
+    <div class="verse indent2">And now ... to mine, to-day.</div>
+    <div class="verse indent2">To-day! To-day is written in curling smoke</div>
+    <div class="verse indent2">Before the Mountain, dumb above the city ...</div>
+    <div class="verse indent2">Our Mountain ... trying to make us understand,</div>
+    <div class="verse indent2">By secret code, sign language ... what you will.</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent6"><i>Rustling of leaves—</i></div>
+    <div class="verse indent6"><i>Pale green, dark amber, scarlet, crimsoning brown—</i></div>
+    <div class="verse indent6"><i>Deep coloured sighs and long deep breaths of earth—</i></div>
+    <div class="verse indent6"><i>Rustling of leaves—</i></div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">“In the beginning”—</div>
+    <div class="verse indent2">The river, the island, and the rustling leaves,</div>
+    <div class="verse indent2">Arrows and mating and life and birth and death,</div>
+    <div class="verse indent2">Silence and solitude;</div><span class="pagenum" id="Page_34">[Pg 34]</span>
+    <div class="verse indent2">But always the Mountain, touching cold blue sky</div>
+    <div class="verse indent2">When the white men landed in their little boats,</div>
+    <div class="verse indent2">When holy dreaming men and women came,</div>
+    <div class="verse indent2">And built their funny little forts and towers,</div>
+    <div class="verse indent2">And sacred shrines,</div>
+    <div class="verse indent2">And made a new-world city.</div>
+    <div class="verse indent2">And all the while the Mountain watched and watched.</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent6">Dirt? Well you certainly can’t expect a city’s docks,</div>
+    <div class="verse indent6">or a great station at an entrance port,</div>
+    <div class="verse indent6">to be like a Quaker meeting-house</div>
+    <div class="verse indent6">on a seventh-day noon.</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">Docks! There’s a magical word! Not unpoetical</div>
+    <div class="verse indent2">let me tell you, if you’ll only close your eyes</div>
+    <div class="verse indent2">and use that “inward eye” your Wordsworth used</div>
+    <div class="verse indent2">for daffodils. My God! you’d think he had secured that “eye”</div>
+    <div class="verse indent2">to be hereafter used for “daffodils,” and “solitude” and “thrills,”</div>
+    <div class="verse indent2">exclusively!</div>
+    <div class="verse indent2">Come now! Just try it on for once to-day</div>
+    <div class="verse indent2">with river docks filled with the motley throng ...</div>
+    <div class="verse indent2">old world and new.</div>
+    <div class="verse indent2">Deep searching eyes that seek the “golden West”—</div>
+    <div class="verse indent2">wild eyes that hold the primal hunger lure,</div>
+    <div class="verse indent2">young eyes that hold the secrets of the dawn,</div>
+    <div class="verse indent2">sad eyes that hold the fury of the night—</div>
+    <div class="verse indent2">We’ll have to stand the dirty docks I think,</div>
+    <div class="verse indent2">and the crowded station—</div>
+    <div class="verse indent2">holding a daffodil to your nose to smell</div>
+    <div class="verse indent2">you’ll soon forget the nose and the daffodil!</div><span class="pagenum" id="Page_35">[Pg 35]</span>
+    <div class="verse indent2">What’s that you’re murmuring?</div>
+    <div class="verse indent2">“It’s all like a magic casement opening out</div>
+    <div class="verse indent2">on perilous seas....” Bless you for those kind words!</div>
+    <div class="verse indent2">Though that’s John Keats that sees our docks—not you!</div>
+    <div class="verse indent2">Wait just a moment—here is something now</div>
+    <div class="verse indent2">that’s well worth watching! It’s the Jewish New Year,</div>
+    <div class="verse indent2">and those are orthodox Jews who have come down</div>
+    <div class="verse indent2">to cast their sins away in running water.</div>
+    <div class="verse indent2">Mumbling in their beards ... from books, and some from memory ...</div>
+    <div class="verse indent2">punctilious enough they are ...</div>
+    <div class="verse indent2">shaking their overcoats ... (those two men, look!)</div>
+    <div class="verse indent2">Into deep river ... old Father St. Lawrence running to the sea.</div>
+    <div class="verse indent2">Old men, believers—and a few young ones too.</div>
+    <div class="verse indent2">You see? Turn round and look at the motor cars.</div>
+    <div class="verse indent2">Look at that old old woman from the slums—</div>
+    <div class="verse indent2">Grandmother of Isaac and Jacob and Abraham—</div>
+    <div class="verse indent2">Look at her! Carefully shake, shake, shake, old Mother!</div>
+    <div class="verse indent2">Strong, wrinkled, kindly face—those toil-worn hands—</div>
+    <div class="verse indent2">Come, let us try the “inward eye” again....</div>
+    <div class="verse indent2">Verily—see! Her sins do drop and float away from her</div>
+    <div class="verse indent2">on the dirty oily water—little sins</div>
+    <div class="verse indent2">that float like tiny, bright-red maple leaves</div>
+    <div class="verse indent2">cast from a lusty old tree in the Fall.</div>
+    <div class="verse indent2">She’s known the life of the full ripe seasons through ...</div>
+    <div class="verse indent2">carefully and punctiliously shake, shake, shake!</div><span class="pagenum" id="Page_36">[Pg 36]</span>
+    <div class="verse indent2">Let us go too from the docks with lightened hearts,</div>
+    <div class="verse indent2">groping our way on upward through the slums.</div>
+    <div class="verse indent2">Listen to the lilt and whimsical chattering</div>
+    <div class="verse indent2">of alien tongues.</div>
+    <div class="verse indent2">“And have not charity”—“Through a glass darkly” ... see?</div>
+    <div class="verse indent2">We’ve dropped our classic daffodils and trod</div>
+    <div class="verse indent2">upon them! But we’ve really seen—something.</div>
+    <div class="verse indent2">To-day.</div>
+    <div class="verse indent2">What else does the Mountain see?</div>
+    <div class="verse indent2">Churches! Hotels! Domes, palaces and towers,</div>
+    <div class="verse indent2">Steep hilly streets, shops, hovels, factories.</div>
+    <div class="verse indent2">Limestone tradition!</div>
+    <div class="verse indent2">Romance! Romance! Raw gold!</div>
+    <div class="verse indent2">Merry-men, jesters, in a surging crowd</div>
+    <div class="verse indent2">mingling with Holy Folk—</div>
+    <div class="verse indent2">Miracles, shrines, and glorious, honest doubts—</div>
+    <div class="verse indent2">raw gold, black, red,—</div>
+    <div class="verse indent2">new thoughts breed sacraments—</div>
+    <div class="verse indent2">white dreams and tawny sins—</div>
+    <div class="verse indent2">the half-good, the half-bad—Humanity!</div>
+    <div class="verse indent2">Groping humanity—</div>
+    <div class="verse indent2">Who judges? How? Or why?</div>
+    <div class="verse indent2">The Mountain watches.</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">Snow-dusted silent streets. The midnight mass—</div>
+    <div class="verse indent2">with quiet thronging worshippers that pass</div>
+    <div class="verse indent2">from darkness into glimmering ecstasies.—</div>
+    <div class="verse indent2">Another mood ...</div>
+    <div class="verse indent2">The blizzard—</div>
+    <div class="verse indent2">The swirling wall-like drifts, while through the streets</div>
+    <div class="verse indent2">the snow-ploughs move like huge primeval beasts</div><span class="pagenum" id="Page_37">[Pg 37]</span>
+    <div class="verse indent2">glutted with power;</div>
+    <div class="verse indent2">wallowing through the mists of drifting powdery particles,</div>
+    <div class="verse indent2">ploughing the snow.</div>
+    <div class="verse indent2">The Mountain watches and possesses now</div>
+    <div class="verse indent2">a festival afternoon of sparkling white,</div>
+    <div class="verse indent2">pierced by the thrilling flights of vivid glancing skis—</div>
+    <div class="verse indent2">pierced by the shooting downward in death-like dive,</div>
+    <div class="verse indent2">of flat toboggans on the mountain slide.</div>
+    <div class="verse indent2">Impertinence the Mountain tolerates!</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">The flashing facets of an ice palace</div>
+    <div class="verse indent2">reared in a square beside a towering church of massive stone,</div>
+    <div class="verse indent2">for half a continent to gaze upon if it so desires,</div>
+    <div class="verse indent2">and feast between whiles.</div>
+    <div class="verse indent2">(“H-mmm—Good advertising this—</div>
+    <div class="verse indent2">Hush! Watch your step! Deliver the goods!”)</div>
+    <div class="verse indent2">Ah well—Mount Royal, graven on a “souvenir!”</div>
+    <div class="verse indent2">The Mountain watches.</div>
+    <div class="verse indent2">“Truly an ice palace is a beautiful thing—a fairy tale!”</div>
+    <div class="verse indent2">“You poets are so fantastic!” “You should worry!”</div>
+    <div class="verse indent2">“My word I’m nearly dead for tea!” “Do hurry!”</div>
+    <div class="verse indent2">“Ice plants for making artificial ice”—“Efficiency”—</div>
+    <div class="verse indent2">“Gold seal—good jazz”</div>
+    <div class="verse indent2">“The cafeterias are the thing to-day—</div>
+    <div class="verse indent2">take up your tray</div>
+    <div class="verse indent2">and walk!”</div>
+    <div class="verse indent2">“What blasphemy!”</div>
+    <div class="verse indent2">“Ice plants for making artificial ice”</div>
+    <div class="verse indent2">“Fine bargain furs there if you’ve got the price”</div><span class="pagenum" id="Page_38">[Pg 38]</span>
+    <div class="verse indent2">“Gods! what a day!”</div>
+    <div class="verse indent2">Then much the same in French—the rapid glancing tongue.</div>
+    <div class="verse indent2">“Day uttereth speech” indeed.</div>
+    <div class="verse indent2">“Night sheweth knowledge.”</div>
+    <div class="verse indent2">The Mountain watches.</div>
+    <div class="verse indent2">Night! Zero night—</div>
+    <div class="verse indent2">like a dense black velvet skin</div>
+    <div class="verse indent2">drawn tightly over the city;</div>
+    <div class="verse indent2">and lights pricking, pricking, pricking—</div>
+    <div class="verse indent2">like fiery pin-points in a million eyes</div>
+    <div class="verse indent2">behind black skins, blazing with jungle light ...</div>
+    <div class="verse indent2">a gay old city is sinister at night.</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent6"><i>Rustling and creaking of black naked branches</i></div>
+    <div class="verse indent6"><i>On the old Mountain—</i></div>
+    <div class="verse indent6"><i>Stark twisted branches black against the snow</i></div>
+    <div class="verse indent6"><i>Snapping and crackling of frost-tortured trees—</i></div>
+    <div class="verse indent6"><i>Rustling—</i></div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">Something has happened! The Mountain almost seems to tremble.</div>
+    <div class="verse indent2">Down its sides rush the melting snows in torrents;</div>
+    <div class="verse indent2">tumbling, tumultuous, most untidy rivers</div>
+    <div class="verse indent2">through icy blackened parapets that still stand.</div>
+    <div class="verse indent2">Washing day for the Mountain!</div>
+    <div class="verse indent2">Ah but wait!—</div>
+    <div class="verse indent2">Silver-green city in a rosy mist—Spring dawn!—</div>
+    <div class="verse indent2">As Life has waked with a soft stirring</div>
+    <div class="verse indent2">Of pouting leafy lips</div>
+    <div class="verse indent2">And curling velvet finger-tips,</div>
+    <div class="verse indent2">Through all the ages while the Mountain watched.</div><span class="pagenum" id="Page_39">[Pg 39]</span>
+  </div>
+  <div class="stanza">
+    <div class="verse indent6"><i>Rustling of leaves—</i></div>
+    <div class="verse indent6"><i>Silver-green, rose-red, amber, scarlet, brown—</i></div>
+    <div class="verse indent6"><i>Deep coloured sighs and long deep breaths of earth—</i></div>
+    <div class="verse indent6"><i>Rustling of leaves</i>—</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">Against my hand a little crumbling dust</div>
+    <div class="verse indent2">Is softly blown—</div>
+    <div class="verse indent2">Before my eyes a glory—sunset? Dawn?</div>
+    <div class="verse indent2">And in my ears a great triumphant song—</div>
+    <div class="verse indent2">Is it a song?</div>
+    <div class="verse indent2">Or but the quiet breathing of a child</div>
+    <div class="verse indent2">Who holds its coloured toys and drifts to sleep?</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">The Mountain watches and is very still.</div>
+  </div>
+</div>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_40">[Pg 40]</span></p>
+<h3 class="nobreak" id="THE_OLD_FRUIT_GARDEN">THE OLD FRUIT GARDEN</h3>
+</div>
+
+
+<p class="ph3">MEMORY</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">T</span><span class="close10">HROUGH </span>tortured weeks of hospital surgery</div>
+    <div class="verse indent2">The old fruit garden of my childhood days</div>
+    <div class="verse indent2">Grew close about me. Through black storms of pain</div>
+    <div class="verse indent2">Swayed joyous boughs of rosy apple-bloom;</div>
+    <div class="verse indent2">White blossomed branches of an old plum-tree;</div>
+    <div class="verse indent2">Old grape-vines clinging to a sunny wall;</div>
+    <div class="verse indent2">Great bushes of red currants and raspberries.</div>
+    <div class="verse indent2">Through hours of torturing thirst I found again</div>
+    <div class="verse indent2">That old fruit garden—as if body and soul</div>
+    <div class="verse indent2">Clutched at cool juicy fruits—remembering—</div>
+    <div class="verse indent2">Devouring them through a parched mouth of the brain.</div>
+  </div>
+</div>
+</div>
+
+
+<p class="ph3">GRAPES</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Grandfather was so courtly, wise and calm:</div>
+    <div class="verse indent2">At times a sweet old wordling, dealing balm</div>
+    <div class="verse indent2">Through business phrase or words of ancient psalm,</div>
+    <div class="verse indent2">Justice and whimsical kindliness to all.</div>
+    <div class="verse indent2">As he watched mankind, so in early Fall,</div>
+    <div class="verse indent2">He watched his grape-vines on the stable wall.</div>
+    <div class="verse indent2">In old Quebec the season is too brief</div>
+    <div class="verse indent2">To ripen grapes well ... sometimes scarlet leaf</div>
+    <div class="verse indent2">Becomes a herald swift beyond belief.</div>
+    <div class="verse indent2">The few big clusters with pale purple bloom</div>
+    <div class="verse indent2">So slowly deepening, often met their doom</div>
+    <div class="verse indent2">When rich October caught November’s gloom.</div>
+    <div class="verse indent2">He never lost his interest ... every Fall</div>
+    <div class="verse indent2">He saw his grape-vines as he’d dreamed them, all</div><span class="pagenum" id="Page_41">[Pg 41]</span>
+    <div class="verse indent2">Weighed down with purple riches, growing tall</div>
+    <div class="verse indent2">Over the stable windows. On the way</div>
+    <div class="verse indent2">To the rose garden where he walked each day ...</div>
+    <div class="verse indent2">“These grapes are riper than last year” he’d say.</div>
+    <div class="verse indent2">In spite of all the travelling he’d done</div>
+    <div class="verse indent2">He sought no changes now and thought “no sun</div>
+    <div class="verse indent2">Could be much brighter than a Canadian one!”</div>
+    <div class="verse indent2">Yet I knew well his grapes brought visions fair</div>
+    <div class="verse indent2">Of mellow summer lands with temperate air.</div>
+    <div class="verse indent2">“Grapes are like men—can’t ripen everywhere....</div>
+    <div class="verse indent2">Men all need sun, and right loam I suppose;</div>
+    <div class="verse indent2">But if one strikes deep roots ... as a rule ... he grows!”</div>
+    <div class="verse indent2">He smiled his smile and cut a late white rose.</div>
+  </div>
+</div>
+</div>
+
+
+<p class="ph3">RED CURRANTS</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">“Well! The red currants must be picked to-day.</div>
+    <div class="verse indent2">They’re ready for jelly” Grandmother would say.</div>
+    <div class="verse indent2">She never wasted words yet had her way.</div>
+    <div class="verse indent2">In cool gray cotton gown, and black straw hat</div>
+    <div class="verse indent2">Securely tied—She made a point of that</div>
+    <div class="verse indent2">Though no breeze stirred the lilacs where she sat</div>
+    <div class="verse indent2">To superintend old Jock and Marie Anne</div>
+    <div class="verse indent2">At tasks of picking. When her palm-leaf fan</div>
+    <div class="verse indent2">Waved slowly all was well; but my blood ran</div>
+    <div class="verse indent2">Quicker when it moved very fast ... one knew</div>
+    <div class="verse indent2">The hours were slipping past ... then old Jock too</div>
+    <div class="verse indent2">And Marie Anne, would pick with greater zest.</div>
+    <div class="verse indent2">“Granny! Red currant jelly’s <i>much</i> the best!”</div>
+    <div class="verse indent2">“Black’s best for colds” she’d say, as she caressed</div>
+    <div class="verse indent2">With firm kind fingers my rough curly head.</div><span class="pagenum" id="Page_42">[Pg 42]</span>
+    <div class="verse indent2">She rarely kissed me. Deep within was bred</div>
+    <div class="verse indent2">Acid reserve and purity ... those red</div>
+    <div class="verse indent2">Ripe currants, with their pleasant acid tang,</div>
+    <div class="verse indent2">Seemed to me just <i>like</i> Grandmother! I sang</div>
+    <div class="verse indent2">My multiplication-tables till they rang</div>
+    <div class="verse indent2">Loud through the garden where dear Granny sat</div>
+    <div class="verse indent2">Smiling—well-pleased—with firmly-tied black hat!</div>
+  </div>
+</div>
+</div>
+
+
+<p class="ph3">AMBER RASPBERRIES</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Old Jock and Marie Anne could never find</div>
+    <div class="verse indent2">Raspberries of the glowing amber kind</div>
+    <div class="verse indent2">To fill the “ancient porcelain bowl.” (’Twas lined</div>
+    <div class="verse indent2">With amber glaze; outside a gold vine wound</div>
+    <div class="verse indent2">In such a graceful pattern round and round.)</div>
+    <div class="verse indent2">But if my Mother looked she always found</div>
+    <div class="verse indent2">Enough to fill the bowl. That day we’d three</div>
+    <div class="verse indent2">Distinguished guests. I loved to have them see</div>
+    <div class="verse indent2">My lovely Mother as she looked at tea....</div>
+    <div class="verse indent2">Her gown of creamy lace—her shining hair,</div>
+    <div class="verse indent2">Her beads of old carved amber ... all her rare</div>
+    <div class="verse indent2">Fragile soft richness, like the berries there</div>
+    <div class="verse indent2">With their pale amber bloom. I loved her so....</div>
+    <div class="verse indent2">I wished that every body there could know....</div>
+    <div class="verse indent2">“Why don’t you eat your berries, Child?” ... then low</div>
+    <div class="verse indent2">I bent my head to hide two burning tears</div>
+    <div class="verse indent2">Of yearning love. How strange those vague cold fears</div>
+    <div class="verse indent2">My child heart knew that day ... what long long years</div>
+    <div class="verse indent2">Since those last lovely hours of ecstasy</div>
+    <div class="verse indent2">When she made Beauty live and thrill for me.</div>
+  </div>
+</div>
+</div>
+<p><span class="pagenum" id="Page_43">[Pg 43]</span></p>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_45">[Pg 45]</span></p>
+<h2 class="nobreak" id="Songs_of_Women">Songs of Women</h2>
+</div>
+
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<h3 class="nobreak" id="BLUE_MOON">BLUE MOON</h3>
+</div>
+
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">O</span><span class="close15">H </span>I was young an’ feared o’ pain</div>
+    <div class="verse indent2">When I went hot-lovering down the lane.</div>
+    <div class="verse indent2">I sipped sweet honey wi’ my red lips,</div>
+    <div class="verse indent2">An’ I touched fire wi’ my finger-tips,</div>
+    <div class="verse indent2">But I drew them back again—</div>
+    <div class="verse indent2">For the withered, gray woman so old and wise,</div>
+    <div class="verse indent2">Wi’ the queer, hushed voice an’ the listening eyes,</div>
+    <div class="verse indent2">An’ the stone-deaf ears, who lives i’ the lane—</div>
+    <div class="verse indent2">She stepped so soft an’ she says “Rose-Jane!</div>
+    <div class="verse indent2">You’re eating plum porridge (ye poor wee loon!)</div>
+    <div class="verse indent2">Eating it hot in a rare blue moon.</div>
+    <div class="verse indent2">You’ve a dimpled face like a rosy June,</div>
+    <div class="verse indent2">But your mouth’ll be burnt</div>
+    <div class="verse indent2">Before you’ve learnt</div>
+    <div class="verse indent2">The way of a man in the moon.</div>
+    <div class="verse indent2">And then they’ll call you ‘Old Rose-Jane</div>
+    <div class="verse indent2">Who went hot-lovering down the lane.’</div>
+    <div class="verse indent2">Beware of the rare blue moon, Rose-Jane!”</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">Saints bless that woman wi’ listening eyes!</div>
+    <div class="verse indent2">I’ve planted the sweet-briar where she lies.</div>
+    <div class="verse indent2">She stopped my ears an’ she made me wise.</div>
+    <div class="verse indent2">I’m pure as the virgin saints are pure—</div>
+    <div class="verse indent2">Now never a man my pale lips lure.</div>
+    <div class="verse indent2">But once in a blue moon, I’m not sure</div>
+    <div class="verse indent2">That the withered gray woman, wi’ listening eyes,</div>
+    <div class="verse indent2">Didn’t cheat me out of a rare fine prize.</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">Something calls to me i’ the moon,</div>
+    <div class="verse indent2">“Rose-Jane! Rose-Jane! Come! Come soon!”</div>
+  </div>
+</div>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_46">[Pg 46]</span></p>
+<h3 class="nobreak" id="MISTRESS_MARY">MISTRESS MARY</h3>
+</div>
+
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">“O</span> <span class="close20">MISTRESS</span> Mary—Mistress Mary—</div>
+    <div class="verse indent2">What have you found in your new old house?</div>
+    <div class="verse indent2">Paperers are waiting you, and carpenters, and gardeners—</div>
+    <div class="verse indent2">And you are up garret, just as still as a mouse!</div>
+    <div class="verse indent2">What makes your eyes so wet and so round?</div>
+    <div class="verse indent2">Mary—Mary! What have you found?”</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">“Where the sour old wind grieves under the eaves</div>
+    <div class="verse indent2">There’s an old trunk hid—Oh the dust on the lid!</div>
+    <div class="verse indent2">I pulled out from it a gay round box,</div>
+    <div class="verse indent2">And in it were worn-out boots and socks—</div>
+    <div class="verse indent2">Little, soft socks and little, stout boots—</div>
+    <div class="verse indent2">And a child’s crude drawings of flowers and fruits,</div>
+    <div class="verse indent2">And a tiny toy whip, and a ship and a ball—</div>
+    <div class="verse indent2">Oh—they’re just like a little lost boy! That’s all!”</div>
+  </div>
+</div>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_47">[Pg 47]</span></p>
+<h3 class="nobreak" id="DAFFY-DOWN-DILLY">DAFFY-DOWN-DILLY</h3>
+</div>
+
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent6"><span class="dropcap">’T</span><span class="close">WAS</span> a green velvet gown</div>
+    <div class="verse indent6">That he wanted me to wear,</div>
+    <div class="verse indent6">With a yellow satin ribbon</div>
+    <div class="verse indent6">In my rough brown hair.</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent6">But his flame burned down</div>
+    <div class="verse indent6">And then he turned cold;</div>
+    <div class="verse indent6">And he sent for the Parson,</div>
+    <div class="verse indent6">Who called me bold.</div>
+  </div>
+<p><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span></p>
+  <div class="stanza">
+    <div class="verse indent2">So I’ve come down with my velvet gown</div>
+    <div class="verse indent2">To earn my living in Evil-Town.</div>
+    <div class="verse indent2">But I think I was ever more mad than bad,</div>
+    <div class="verse indent2">And I’d very much rather be good and glad....</div>
+  </div>
+<p><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span></p>
+  <div class="stanza">
+    <div class="verse indent2"><i>Frowsy thing</i></div>
+    <div class="verse indent2"><i>With a broken wing!</i></div>
+    <div class="verse indent2"><i>Hark to the queer little songs she’ll sing!</i></div>
+    <div class="verse indent2"><i>Drowsy thing!</i></div>
+  </div>
+</div>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_48">[Pg 48]</span></p>
+<h3 class="nobreak" id="THE_BIRTH-NIGHT">THE BIRTH-NIGHT</h3>
+</div>
+
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">T</span><span class="close10">HE </span>eerie fingers of the rain</div>
+    <div class="verse indent2">All day have stroked my window-pane,</div>
+    <div class="verse indent2">While all the day and all the night</div>
+    <div class="verse indent2">Elves have been grinding, keen and bright,</div>
+    <div class="verse indent2">Weird, tiny knives of nerves and wits.</div>
+    <div class="verse indent2">Upon my heart an Elf-king sits ...</div>
+    <div class="verse indent2">A cruel, Lilliputian mite ...</div>
+    <div class="verse indent2">And by my breath he flies a kite</div>
+    <div class="verse indent2">Of hope in life or hope in death.</div>
+    <div class="verse indent2">He tugs and scowls with all his might ...</div>
+    <div class="verse indent2">The kite depends on my frail breath.</div>
+    <div class="verse indent2">I watch the earthly colours bright,</div>
+    <div class="verse indent2">Painted upon that fluttering kite.</div>
+  </div>
+<p><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span></p>
+  <div class="stanza">
+    <div class="verse indent2">Little boys fly gay kites</div>
+    <div class="verse indent2">And play with marbles ...</div>
+    <div class="verse indent2">Little boys laugh and shout</div>
+    <div class="verse indent2">In the wind and the sunshine....</div>
+  </div>
+<p><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span></p>
+  <div class="stanza">
+    <div class="verse indent2">Little Boy ... oh little Boy ... were you ever an Elf-king?</div>
+  </div>
+<p><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span></p>
+  <div class="stanza">
+    <div class="verse indent2">The eerie fingers of the rain</div>
+    <div class="verse indent2">All day have stroked my window-pane.</div>
+  </div>
+<p><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span></p>
+  <div class="stanza">
+    <div class="verse indent2">Far off I hear a voice explain</div>
+    <div class="verse indent2">“She seems to listen to the rain ...</div><span class="pagenum" id="Page_49">[Pg 49]</span>
+    <div class="verse indent2">She <i>has</i> put up a plucky fight!</div>
+    <div class="verse indent2">A splendid boy! Oh <i>she’s</i> all right!”</div>
+  </div>
+<p><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span></p>
+
+  <div class="stanza">
+    <div class="verse indent2">Elves! Elves! Stop your grinding!</div>
+    <div class="verse indent2">Rain! Rain! Stop your stroking!</div>
+    <div class="verse indent2">Bright little kite is gaily flying</div>
+    <div class="verse indent2">In the sky ... for I’m not dying ...</div>
+    <div class="verse indent2">I am alive!... alive!... alive!</div>
+    <div class="verse indent2">Heart and soul and senses five!</div>
+  </div>
+<p><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span></p>
+  <div class="stanza">
+    <div class="verse indent2">Now as soon as I can say anything</div>
+    <div class="verse indent2">I’ll make them show me that Elfin-king!</div>
+  </div>
+</div>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_50">[Pg 50]</span></p>
+<h3 class="nobreak" id="A_PORTRAIT">A PORTRAIT</h3>
+</div>
+
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">F</span><span class="close10">RAIL, </span>exquisite, indomitable face,</div>
+    <div class="verse indent2">Where pain has left its trace ...</div>
+    <div class="verse indent2">Where are the words to paint</div>
+    <div class="verse indent2">Her curious austere charm ... elusive, pure,</div>
+    <div class="verse indent2">As the frost etchings on the window-pane.</div>
+    <div class="verse indent2">Ivory, ebony, lace ...</div>
+    <div class="verse indent2">Yes I shall choose that clinging gown of black,</div>
+    <div class="verse indent2">Severely plain, but with such frills of lace</div>
+    <div class="verse indent2">Over the delicate wrists and blue-veined hands</div>
+    <div class="verse indent2">That for an instant one feels all restraint</div>
+    <div class="verse indent2">Quite useless! Ravishing, ecstatic frills</div>
+    <div class="verse indent2">Of lace, or lacy thrills!</div>
+    <div class="verse indent2">Choose either phrase!</div>
+    <div class="verse indent2">She’s no fanatical saint ...</div>
+    <div class="verse indent2">No, after all,</div>
+    <div class="verse indent2">No saint at all!</div>
+    <div class="verse indent2">Come help me, portrait painters rare and old ...</div>
+    <div class="verse indent2">Velasquez, Romney, Reynolds and Van Dyke ...</div>
+    <div class="verse indent2">Here’s what you’d like</div>
+    <div class="verse indent2">Poured in a modern, twentieth century mould.</div>
+    <div class="verse indent2">Ivory, ebony, lace ...</div>
+    <div class="verse indent2">Her face</div>
+    <div class="verse indent2">Brings suddenly before me grave and clear,</div>
+    <div class="verse indent2">Impression of an old-time cavalier,</div>
+    <div class="verse indent2">With feminine grace;</div>
+    <div class="verse indent2">Brave glancing sword and delicate ripples of lace.</div>
+    <div class="verse indent2">For she has conquered dragons of old pain</div>
+    <div class="verse indent2">With a deep-shining clarity of thought:</div>
+    <div class="verse indent2">Victorious though her frailty shows the strain.</div>
+    <div class="verse indent2">I trace</div><span class="pagenum" id="Page_51">[Pg 51]</span>
+    <div class="verse indent2">With clumsy words the outlines of her face ...</div>
+    <div class="verse indent2">Brave, grave, and suddenly flashing, purely gay,</div>
+    <div class="verse indent2">Like the lace frills at play!</div>
+    <div class="verse indent2">And so you see as I began I end</div>
+    <div class="verse indent2">This portrait of my friend ...</div>
+    <div class="verse indent2">Ivory, ebony, lace ...</div>
+    <div class="verse indent2">Frail, exquisite, indomitable face!</div>
+  </div>
+</div>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_52">[Pg 52]</span></p>
+<h3 class="nobreak" id="THE_SONG_OF_THE_WILLOW_WAND">THE SONG OF THE WILLOW WAND</h3>
+</div>
+
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">S</span><span class="close12">ING </span>hey the green willow</div>
+    <div class="verse indent2">That grows in my valley!</div>
+    <div class="verse indent2">Oh who would climb hill-tops</div>
+    <div class="verse indent2">To see what’s beyond!</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent8">There came a gipsy vagabond</div>
+    <div class="verse indent8">A-strolling down my valley,</div>
+    <div class="verse indent8">With honey mouth for kissing</div>
+    <div class="verse indent8">And a gown of dusky red.</div>
+    <div class="verse indent8">“So this is how ye spend the days</div>
+    <div class="verse indent8">Wi’ never a wind to freshen ye—</div>
+    <div class="verse indent8">Climb up the hill wi’ me, my lad,</div>
+    <div class="verse indent8">An’ look—see what’s beyond!”</div>
+    <div class="verse indent8">She laughed wi’ me, and shared sweet bread,</div>
+    <div class="verse indent8">And waved a willow wand.</div>
+    <div class="verse indent8">By green moonlight we climbed the hill</div>
+    <div class="verse indent8">And reached the top at morn,</div>
+    <div class="verse indent8">And then she stood on tip-toe there</div>
+    <div class="verse indent8">And blew a silver horn.</div>
+    <div class="verse indent8">Oh at the other side the hill</div>
+    <div class="verse indent8">Her gipsy lord was waiting there ...</div>
+    <div class="verse indent8">I saw a joyous mating there</div>
+    <div class="verse indent8">That left me all forlorn.</div>
+    <div class="verse indent8">I watched her gown of dusky red</div>
+    <div class="verse indent8">Against the blue horizon ...</div>
+    <div class="verse indent8">Oh that was how I climbed the hill</div>
+    <div class="verse indent8">And saw the world beyond.</div>
+    <div class="verse indent8">I wonder why God let her come</div>
+    <div class="verse indent8">And share sweet bread a-laughing,</div>
+    <div class="verse indent8">And leave a-lying at my feet</div>
+    <div class="verse indent8">Her broken willow wand.</div><span class="pagenum" id="Page_53">[Pg 53]</span>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">Sing hey the green willow</div>
+    <div class="verse indent2">That grows in my valley!</div>
+    <div class="verse indent2">Oh who would climb hill-tops</div>
+    <div class="verse indent2">To see what’s beyond?</div>
+  </div>
+</div>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_54">[Pg 54]</span></p>
+<h3 class="nobreak" id="THE_DEAD_VIOLIN">THE DEAD VIOLIN</h3>
+</div>
+
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">I</span><span class="close08">CICLES</span> ... icicles hang from the eaves</div>
+    <div class="verse indent2">In glittering sheaves,</div>
+    <div class="verse indent2">Over attic windows,</div>
+    <div class="verse indent2">A cold wind heaves</div>
+    <div class="verse indent2">Great, shuddering, gusty sighs; it grieves</div>
+    <div class="verse indent2">For its waning power in the gay March sun,</div>
+    <div class="verse indent2">Whose melting work now is well begun ...</div>
+    <div class="verse indent2">Soft, slow,</div>
+    <div class="verse indent2">Drip, drip,</div>
+    <div class="verse indent2">Soft, slow,</div>
+    <div class="verse indent2">Drop, drop ...</div>
+    <div class="verse indent2">Great icicle tears ...</div>
+    <div class="verse indent2">Glistening, heavy, sun-drenched tears!</div>
+    <div class="verse indent2">Under my roof</div>
+    <div class="verse indent2">Remote, aloof,</div>
+    <div class="verse indent2">Lies this deer-hide trunk with its quaint, brass nails,</div>
+    <div class="verse indent2">Ancient, small ...</div>
+    <div class="verse indent2">How that old wind wails</div>
+    <div class="verse indent2">As I lift the lid to see</div>
+    <div class="verse indent2">What is here for me!</div>
+    <div class="verse indent2">Delightful find!</div>
+    <div class="verse indent2">All carefully, carefully lined</div>
+    <div class="verse indent2">With old old wall-paper, blue and gold!</div>
+    <div class="verse indent2">First I unfold</div>
+    <div class="verse indent2">An Indian shawl ... then a linen sheet ...</div>
+    <div class="verse indent2">Oh ... packets of letters, still faintly sweet ...</div>
+    <div class="verse indent2">“More letters to burn!” I groan, “Dear dear!</div>
+    <div class="verse indent2">But here ... look here!</div>
+    <div class="verse indent2">As I live an old, old violin,</div>
+    <div class="verse indent2">So frail and thin,</div><span class="pagenum" id="Page_55">[Pg 55]</span>
+    <div class="verse indent2">And dusky dark in its shapely line;</div>
+    <div class="verse indent2">A shell out-worn; (hear that old wind whine!)</div>
+    <div class="verse indent2">With a cruel gash here at one side,</div>
+    <div class="verse indent2">And the tail-piece torn</div>
+    <div class="verse indent2">And dangling, tied by a piece of twine ...</div>
+    <div class="verse indent2">A dead violin in fine.</div>
+  </div>
+<p><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span></p>
+  <div class="stanza">
+    <div class="verse indent2">“We spend our years as a tale that is told”</div>
+    <div class="verse indent2">Violins packed in a poetry mould!</div>
+    <div class="verse indent2">Blue violins that, liquid, pour</div>
+    <div class="verse indent2">Vanished songs on a mystic shore ...</div>
+    <div class="verse indent2">Green violins that ecstatic trill</div>
+    <div class="verse indent2">Like bobolinks, till the year stands still</div>
+    <div class="verse indent2">In a lyrical meadow of green and gold ...</div>
+    <div class="verse indent2">(Violins packed in a poetry mould!)</div>
+    <div class="verse indent2">Red violins of a summer night</div>
+    <div class="verse indent2">Throbbing with passionate, blood-red song ...</div>
+    <div class="verse indent2">Dead violin! Ice-bound so long ...</div>
+    <div class="verse indent2">Soft!</div>
+    <div class="verse indent2">Soft ... drop softly icicle tears ...</div>
+    <div class="verse indent2">Icicle tears from the ice-bound years,</div>
+    <div class="verse indent2">Vibrating under my strong, new roof,</div>
+    <div class="verse indent2">Where the old violin, remote, aloof,</div>
+    <div class="verse indent2">Lies in my hands so terribly dead ...</div>
+    <div class="verse indent2">Never an echo of throbbing red ...</div>
+    <div class="verse indent2">Dead. Dead.</div>
+  </div>
+<p><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span></p>
+  <div class="stanza">
+    <div class="verse indent2">I want to bury it where it will rot</div>
+    <div class="verse indent2">In rich warm earth, in a noontide hot,</div>
+    <div class="verse indent2">Under the mightiest tree I know,</div>
+    <div class="verse indent2">And let it again through the tree-roots grow.</div><span class="pagenum" id="Page_56">[Pg 56]</span>
+    <div class="verse indent2">I’ll fold it close in the soft, old sheet,</div>
+    <div class="verse indent2">Place the letters, still faintly sweet,</div>
+    <div class="verse indent2">Against the gash in its dark-hued side ...</div>
+    <div class="verse indent2">Its the violin—not Love—that died.</div>
+  </div>
+</div>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_57">[Pg 57]</span></p>
+<h3 class="nobreak" id="A_SKETCH">A SKETCH</h3>
+</div>
+
+
+<p><span class="pagenum" id="Page_59">[Pg 59]</span></p><div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">I</span> <span class="close10">HEAR</span> him humming as he drives his car,</div>
+    <div class="verse indent2">In mellow baritone, an ancient psalm—</div>
+    <div class="verse indent2">Drifting down to his subtle modern brain</div>
+    <div class="verse indent2">From his old covenanting ancestors,</div>
+    <div class="verse indent2">Who strode bare-kneed through purple heather bloom,</div>
+    <div class="verse indent2">Praising their God on wind-swept Highland hills.</div>
+    <div class="verse indent2">I am his wife. Beside him vividly,</div>
+    <div class="verse indent2">I see now not the crowded city streets,</div>
+    <div class="verse indent2">Through which he presses, strong, aloof and calm,</div>
+    <div class="verse indent2">Factories and shipyards where his vast machines</div>
+    <div class="verse indent2">Whirr steadfastly, obedient to his brain—</div>
+    <div class="verse indent2">I see now just those small and golden hours</div>
+    <div class="verse indent2">When he is mine.</div>
+  </div>
+</div>
+</div>
+<p><span class="pagenum" id="Page_58">[Pg 58]</span></p>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_61">[Pg 61]</span></p>
+<h2 class="nobreak" id="Cinquains">Cinquains</h2>
+</div>
+
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<h3 class="nobreak" id="CITY_CHILDS_EASTER">CITY CHILD’S EASTER</h3>
+</div>
+
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">F</span><span class="close10">RAGRANCE</span></div>
+    <div class="verse indent2">Of Hot Cross Buns:</div>
+    <div class="verse indent2">Pots of white lilies: sunshine: magic eggs:</div>
+    <div class="verse indent2">New skipping-ropes—but old old winds</div>
+    <div class="verse indent2">Of Faith.</div>
+  </div>
+</div>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_62">[Pg 62]</span></p>
+<h3 class="nobreak" id="DEEP_SNOW">DEEP SNOW</h3>
+</div>
+
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">P</span><span class="close10">OWDER</span></div>
+    <div class="verse indent2">Of diamond</div>
+    <div class="verse indent2">Upon a silver birch;</div>
+    <div class="verse indent2">Old stone wall</div>
+    <div class="verse indent2">Buried deep.</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">And you ...</div>
+    <div class="verse indent2">A scarlet bird</div>
+    <div class="verse indent2">Whose wild wings flutter here</div>
+    <div class="verse indent2">Against my soul. How still</div>
+    <div class="verse indent2">The world!</div>
+  </div>
+</div>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_63">[Pg 63]</span></p>
+<h3 class="nobreak" id="HOKKU">HOKKU</h3>
+</div>
+
+<p>*“‘Hokku’ (seventeen-syllable poem) in Japanese mind might be compared
+with a tiny star, I dare say, carrying the whole sky at its back. It is
+like a slightly-open door, where you may steal into the realm of poesy.
+It is simply a guiding lamp. Its value depends on how much it suggests.”</p>
+
+
+
+<p class="right">
+    (Yone Noguchi, from <i>The Pilgrimage</i>,<br>
+    published by Elkin Mathews, London, Eng.)
+  </p>
+
+
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_64">[Pg 64]</span></p>
+<h3 class="nobreak" id="TWELVE_HOKKU_ON_A_CANADIAN_THEME">TWELVE HOKKU ON A CANADIAN THEME</h3>
+</div>
+
+
+<p class="center">(1)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">H</span><span class="close15">OW </span>strangely they float,</div>
+    <div class="verse indent2">Pale gold and ivory cups,</div>
+    <div class="verse indent2">On wilderness lakes.</div>
+  </div>
+<p class="center">(2)</p>
+  <div class="stanza">
+    <div class="verse indent2">The loon’s weird laughter</div>
+    <div class="verse indent2">Holds Indian deviltry,</div>
+    <div class="verse indent2">Long, long forgotten.</div>
+  </div>
+<p class="center">(3)</p>
+  <div class="stanza">
+    <div class="verse indent2">Indian cradle</div>
+    <div class="verse indent2">Swung from bough, rocked by Four Winds:</div>
+    <div class="verse indent2">Christ lay in manger.</div>
+  </div>
+<p class="center">(4)</p>
+  <div class="stanza">
+    <div class="verse indent2">Silver-haired Marquise!</div>
+    <div class="verse indent2">You were transplanted, one Spring,</div>
+    <div class="verse indent2">Into wild New France.</div>
+  </div>
+<p class="center">(5)</p>
+  <div class="stanza">
+    <div class="verse indent2">The sugar maples ...</div>
+    <div class="verse indent2">Benevolent goddesses</div>
+    <div class="verse indent2">Who offer honey.</div>
+  </div>
+<p class="center">(6)</p>
+  <div class="stanza">
+    <div class="verse indent2">Snow-shoes: like strong wings</div>
+    <div class="verse indent2">Bound on the feet of victors</div>
+    <div class="verse indent2">Conquering snow-fields.</div>
+  </div>
+<p class="center">(7)<span class="pagenum" id="Page_65">[Pg 65]</span></p>
+  <div class="stanza">
+    <div class="verse indent2">On city pavements</div>
+    <div class="verse indent2">Two muffled, sombre nuns pace,</div>
+    <div class="verse indent2">Behind laughing girls.</div>
+  </div>
+<p class="center">(8)</p>
+  <div class="stanza">
+    <div class="verse indent2">You set narcissus</div>
+    <div class="verse indent2">Amidst your silver birches</div>
+    <div class="verse indent2">By Northern lakeside.</div>
+  </div>
+<p class="center">(9)</p>
+  <div class="stanza">
+    <div class="verse indent2">Five o’clock! You pause ...</div>
+    <div class="verse indent2">Handle frail, old cups, pour tea,</div>
+    <div class="verse indent2">And become grande dame.</div>
+  </div>
+<p class="center">(10)</p>
+  <div class="stanza">
+    <div class="verse indent2">When Loneliness stalked ...</div>
+    <div class="verse indent2">Black panther through gold wheat-fields ...</div>
+    <div class="verse indent2">You used Love’s arrows.</div>
+  </div>
+<p class="center">(11)</p>
+  <div class="stanza">
+    <div class="verse indent2">Puissant woman!...</div>
+    <div class="verse indent2">Sheltering tiny things like</div>
+    <div class="verse indent2">English primroses!</div>
+  </div>
+<p class="center">(12)</p>
+  <div class="stanza">
+    <div class="verse indent2">Fast the new trails lead</div>
+    <div class="verse indent2">From wilderness to city!</div>
+    <div class="verse indent2">Years pass ... Canada!</div>
+  </div>
+</div>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_66">[Pg 66]</span></p>
+<h3 class="nobreak" id="LIFE_SEQUENCE">LIFE SEQUENCE</h3>
+</div>
+
+<p class="center">(<i>In The Hokku Manner</i>)</p>
+
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">(U</span><span class="close18">NREADY)</span></div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">Close-folded fern ...</div>
+    <div class="verse indent2">So stiff; so coldly self-sustained:</div>
+    <div class="verse indent2">But summer passes.</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">(Motherhood)</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">Puss watches the world,</div>
+    <div class="verse indent2">Troubled: but knows she is linked</div>
+    <div class="verse indent2">To a miracle.</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">(Home)</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">Empty room; fire dies;</div>
+    <div class="verse indent2">Moon shines in; chairs and tables converse;</div>
+    <div class="verse indent2">Books croon songs.</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">(Awakening)</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">Gray old tree</div>
+    <div class="verse indent2">Has breasted winter storms; but is vaguely</div>
+    <div class="verse indent2">Worried by March.</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">(Memorial Tablet)</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">Sunshine on storied bronze:</div>
+    <div class="verse indent2">Love on the whirling earth:</div>
+    <div class="verse indent2">And you on my heart.</div>
+  </div>
+</div>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_67">[Pg 67]</span></p>
+<h3 class="nobreak" id="PRAYER_IN_SCARLET_AND_WHITE_PAINT">PRAYER IN SCARLET AND WHITE PAINT</h3>
+</div>
+
+
+<p><span class="pagenum" id="Page_69">[Pg 69]</span></p><div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">T</span><span class="close10">HERE </span>is a marvellous washing</div>
+    <div class="verse indent2">creamy and snowy-white</div>
+    <div class="verse indent2">hung high on lines</div>
+    <div class="verse indent2">stretched from upper and lower balconies</div>
+    <div class="verse indent2">in the back-yard, across the narrow lane</div>
+    <div class="verse indent2">behind my rusty apple-tree</div>
+    <div class="verse indent2">and dusty lilac hedge;</div>
+    <div class="verse indent2">and a great splendid ‘woman-by-the-day’</div>
+    <div class="verse indent2">comely and fat, with a bronzed skin</div>
+    <div class="verse indent2">and tumbled blue black hair,</div>
+    <div class="verse indent2">and an ugly and joyous scarlet gown,</div>
+    <div class="verse indent2">is hanging out the clothes ...</div>
+    <div class="verse indent2">wet heavy clean white clothes ...</div>
+    <div class="verse indent2">soft liquid splashes of light amidst dull dusty trees</div>
+    <div class="verse indent2">and sombre dirty bricks.</div>
+    <div class="verse indent2">The laden lines begin to ripple seductively</div>
+    <div class="verse indent2">in the cool sour east wind.</div>
+    <div class="verse indent2">There is no sun to-day,</div>
+    <div class="verse indent2">but the great splashes of high-hung white,</div>
+    <div class="verse indent2">the competent brown arms,</div>
+    <div class="verse indent2">the comfortable strength in vivid scarlet ...</div>
+    <div class="verse indent2">they have given me the warmth and wonder</div>
+    <div class="verse indent2">and the refreshment</div>
+    <div class="verse indent2">of tumbling woodland waters</div>
+    <div class="verse indent2">and blazing sun.</div>
+    <div class="verse indent2">I thank you ... Life!</div>
+    <div class="verse indent2">I daub it in on a bit of canvas</div>
+    <div class="verse indent2">(with a copy of a Botticelli madonna on the other side!)</div>
+    <div class="verse indent2">so I may remember ......</div>
+    <div class="verse indent2">the sordid back lane has become quite immaterial ...</div>
+    <div class="verse indent2">I thank you ... Life!</div>
+  </div>
+</div>
+</div>
+<p><span class="pagenum" id="Page_68">[Pg 68]</span></p>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_71">[Pg 71]</span></p>
+<h2 class="nobreak" id="Cold_Tragedy_1">Cold Tragedy</h2>
+</div>
+
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<h3 class="nobreak" id="COLD_TRAGEDY">COLD TRAGEDY</h3>
+</div>
+
+
+<p class="center">FLORENCE</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">H</span><span class="close15">OW </span>this old terrace of mellow, creamy stone</div>
+    <div class="verse indent2">Grows warm in this noontide sun of Italy ...</div>
+    <div class="verse indent2">I sit alone</div>
+    <div class="verse indent2">And dream a piteous dream of ecstasy</div>
+    <div class="verse indent2">And suddenly wake!</div>
+    <div class="verse indent2">In that raw town by a Canadian lake</div>
+    <div class="verse indent2">Does she pause now ... to watch the falling snow?</div>
+    <div class="verse indent2">Before me stretch the olive trees that glow</div>
+    <div class="verse indent2">With their soft silvery radiance; far below</div>
+    <div class="verse indent2">The towers of Florence rise, like tall carved flowers.</div>
+    <div class="verse indent2">Ah I know well she does not count her hours</div>
+    <div class="verse indent2">That swiftly pass from dawn to candle-light ...</div>
+    <div class="verse indent2">She has the sun-filled day ...</div>
+    <div class="verse indent2">I but the night!</div>
+  </div>
+</div>
+</div>
+
+
+<p class="center">VENICE</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Dense violet sky of sparkling stars above,</div>
+    <div class="verse indent2">And all around</div>
+    <div class="verse indent2">The soft, mysterious stirring of dark velvet water</div>
+    <div class="verse indent2">That makes no sound.</div>
+    <div class="verse indent2">And here in the old Square</div>
+    <div class="verse indent2">Life ... surging, swaying, sparkling everywhere,</div>
+    <div class="verse indent2">As if it held at arms’ length waiting there</div>
+    <div class="verse indent2">The sky and water and their mysteries.</div>
+    <div class="verse indent2">But near me at a little table alone,</div>
+    <div class="verse indent2">A red-haired, black-eyed woman broods and waits,</div><span class="pagenum" id="Page_72">[Pg 72]</span>
+    <div class="verse indent2">Gazing across the empty cups and plates.</div>
+    <div class="verse indent2">Her bright hair makes a glory in the light,</div>
+    <div class="verse indent2">But her dark eyes, unseeing, bring the night,</div>
+    <div class="verse indent2">Too near!</div>
+  </div>
+</div>
+</div>
+
+
+<p class="center">ROME</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">So ... only the little things are left to me ...</div>
+    <div class="verse indent2">Cold comforts they!... Beauty my only home.</div>
+    <div class="verse indent2">Drifting of almond bloom ... gray ruins of Rome ...</div>
+    <div class="verse indent2">The Italian sun that makes these old stones warm ...</div>
+    <div class="verse indent2">Lilt of old poems ... sight of a girlish form ...</div>
+    <div class="verse indent2">Gay little laughter ... moon through the cypress trees ...</div>
+    <div class="verse indent2">I occupy myself quite well with these.</div>
+  </div>
+</div>
+</div>
+<p><span class="pagenum" id="Page_73">[Pg 73]</span></p>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_75">[Pg 75]</span></p>
+<h2 class="nobreak" id="Homespun">Homespun</h2>
+</div>
+
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<h3 class="nobreak" id="TWINS">TWINS</h3>
+</div>
+
+<p class="center">(<i>The old Housekeeper speaks</i>)</p>
+
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">I</span><span class="close07">’VE </span>seen a good deal in my life.</div>
+    <div class="verse indent2">My own story was over you see</div>
+    <div class="verse indent2">Pretty young—</div>
+    <div class="verse indent2">But I’ve danced an’ I’ve sung</div>
+    <div class="verse indent2">In my day with the best.</div>
+    <div class="verse indent2">I’ve been blest</div>
+    <div class="verse indent2">With the love of a fine brave man,</div>
+    <div class="verse indent2">An’ a babe at my breast.</div>
+    <div class="verse indent2">But now that’s all past,</div>
+    <div class="verse indent2">An’ I’ve got a good home that’ll last</div>
+    <div class="verse indent2">(An annuity too)</div>
+    <div class="verse indent2">Till old Mr. Drayton an’ I</div>
+    <div class="verse indent2">Get through!</div>
+    <div class="verse indent2">What d’ye say?</div>
+    <div class="verse indent2">Hmmm—</div>
+    <div class="verse indent2">It’s funny you like to hear me talk,</div>
+    <div class="verse indent2">An’ drop in like this on your afternoon walk.</div>
+    <div class="verse indent2">Now you want to know—don’t you?—</div>
+    <div class="verse indent2">Yes yes— —</div>
+    <div class="verse indent2">This last queer thing that’s happened!</div>
+    <div class="verse indent2">I guess</div>
+    <div class="verse indent2">You’ll like it because you like cats!</div>
+    <div class="verse indent2">Well—last night</div>
+    <div class="verse indent2">With the fire burnin’ bright</div>
+    <div class="verse indent2">I was sittin’ an’ knittin’</div>
+    <div class="verse indent2">An’ watchin’ the kitten</div>
+    <div class="verse indent2">An’ the old mother cat.</div>
+    <div class="verse indent2">I sat</div>
+    <div class="verse indent2">Here; an’ there by the table a-readin’</div><span class="pagenum" id="Page_76">[Pg 76]</span>
+    <div class="verse indent2">As usual—a-readin’ as if he was feedin’</div>
+    <div class="verse indent2">His stomach an’ soul,</div>
+    <div class="verse indent2">Sat old Mr. Drayton—as droll</div>
+    <div class="verse indent2">An’ dried up an old sinner</div>
+    <div class="verse indent2">As ever took dinner</div>
+    <div class="verse indent2">With his book by his plate,</div>
+    <div class="verse indent2">Readin’ early an’ late,</div>
+    <div class="verse indent2">With his shinin’ bald head an’ its mole.</div>
+    <div class="verse indent2">But he does love a kitten—</div>
+    <div class="verse indent2">An’ likes me here knittin’—</div>
+    <div class="verse indent2">Poor soul!</div>
+    <div class="verse indent2">Well all of a sudden the bell rang.</div>
+    <div class="verse indent2">I went just as spry as I could</div>
+    <div class="verse indent2">But I thought die I should</div>
+    <div class="verse indent2">When I opened the door</div>
+    <div class="verse indent2">An’ I saw standin’ there</div>
+    <div class="verse indent2">In the hall lamp’s red glare</div>
+    <div class="verse indent2">Another old Drayton—as like as two peas—</div>
+    <div class="verse indent2">The one at the table behind me a-readin’</div>
+    <div class="verse indent2">An’ here on the step number Two stood—a-kneadin’</div>
+    <div class="verse indent2">His long pointed chin</div>
+    <div class="verse indent2">With his skinny old hand.</div>
+    <div class="verse indent2">But he says very bland—</div>
+    <div class="verse indent2">A-stickin’ his eye glass up tight in his eye,</div>
+    <div class="verse indent2">With the black ribbon danglin’</div>
+    <div class="verse indent2">“My good woman—I</div>
+    <div class="verse indent2">Am your master’s twin brother.</div>
+    <div class="verse indent2">Mr. Drayton is in?”</div>
+    <div class="verse indent2">An’ all I could say like a booby was</div>
+    <div class="verse indent2">“Twin? Twin brother—twin brother—</div>
+    <div class="verse indent2">Oh Luddy! Twin? Twin!”</div>
+    <div class="verse indent2">Then <i>my</i> Drayton spoke</div><span class="pagenum" id="Page_77">[Pg 77]</span>
+    <div class="verse indent2">An’ I almost jumped out of my skin—</div>
+    <div class="verse indent2">With his dry old voice</div>
+    <div class="verse indent2">Just like an echo—</div>
+    <div class="verse indent2">“I’m in.</div>
+    <div class="verse indent2">Twin.”</div>
+    <div class="verse indent2">Then he says “Mrs. Beaton! Stay here!”</div>
+    <div class="verse indent2">I tell you I felt queer.</div>
+    <div class="verse indent2">There they sat by the fire</div>
+    <div class="verse indent2">With the table between,</div>
+    <div class="verse indent2">Just eyein’ each other—</div>
+    <div class="verse indent2">Twin brother—twin brother—</div>
+    <div class="verse indent2">Both babes of one mother.</div>
+    <div class="verse indent2">The old cat humped an’ spit on my knees</div>
+    <div class="verse indent2">An’ run off with a sneeze.</div>
+    <div class="verse indent2">Then said he—the new Drayton—</div>
+    <div class="verse indent2">“Well Richard she’s dead!</div>
+    <div class="verse indent2">Kittie’s dead—</div>
+    <div class="verse indent2">And the last words she said</div>
+    <div class="verse indent2">Were ‘Now Rob you make up with him Dear.’</div>
+    <div class="verse indent2">So Richard—I’m here.”</div>
+    <div class="verse indent2">But my Drayton sat quiet—</div>
+    <div class="verse indent2">Poor, shrivelled, dear soul</div>
+    <div class="verse indent2">With his mole.</div>
+    <div class="verse indent2">An’ I noticed the other was lackin’ the mole</div>
+    <div class="verse indent2">But otherwise—My! They are certainly twins!</div>
+    <div class="verse indent2">“Yes” said Drayton, “You’re in</div>
+    <div class="verse indent2">My house, Twin.</div>
+    <div class="verse indent2">So she thought Bitter Past</div>
+    <div class="verse indent2">Can be sweetened at last!</div>
+    <div class="verse indent2">Pretty thin!”</div>
+    <div class="verse indent2">An’ the light on his mole</div>
+    <div class="verse indent2">Seemed to shrivel his soul.</div><span class="pagenum" id="Page_78">[Pg 78]</span>
+    <div class="verse indent2">You’d have heard it if I’d dropped a pin.</div>
+    <div class="verse indent2">Then they sat an’ they sat an’ they sat.</div>
+    <div class="verse indent2">I could see it was flat</div>
+    <div class="verse indent2">That somethin’ would <i>have</i> to be done</div>
+    <div class="verse indent2">Or there’d nothin’ be won</div>
+    <div class="verse indent2">For either. I felt as if maybe we’d sit</div>
+    <div class="verse indent2">Till Eternity come</div>
+    <div class="verse indent2">Or till I had a fit!</div>
+    <div class="verse indent2">For with chins like theirs set—</div>
+    <div class="verse indent2">I was in a cold sweat</div>
+    <div class="verse indent2">I can tell you. I took up my knittin’</div>
+    <div class="verse indent2">To just die there—sittin’</div>
+    <div class="verse indent2">When sudden that kitten</div>
+    <div class="verse indent2">She just took a glance</div>
+    <div class="verse indent2">An’ made one funny prance</div>
+    <div class="verse indent2">Up that table at Drayton—</div>
+    <div class="verse indent2">The new one—She put up her paw</div>
+    <div class="verse indent2">An’ she patted his danglin’ black ribbon.</div>
+    <div class="verse indent2">Oh Law—an’ he had to hold tight</div>
+    <div class="verse indent2">To his eyeglass to fix it safe into his eye.</div>
+    <div class="verse indent2">Then if she didn’t try</div>
+    <div class="verse indent2">To get at it again</div>
+    <div class="verse indent2">An’ she sat up an’ blinked</div>
+    <div class="verse indent2">In his face for a minute—the man never winked.</div>
+    <div class="verse indent2">Then she played with her tail</div>
+    <div class="verse indent2">Right under his chin—</div>
+    <div class="verse indent2">Just a gray ball of fur</div>
+    <div class="verse indent2">With two eyes an’ a purr.</div>
+    <div class="verse indent2">An’ the light that was caught</div>
+    <div class="verse indent2">In his great signet ring,</div>
+    <div class="verse indent2">She saw that an’ patted it—cute little thing—</div>
+    <div class="verse indent2">An’ she licked all his hand with her little pink tongue,</div><span class="pagenum" id="Page_79">[Pg 79]</span>
+    <div class="verse indent2">An’ then back to my Drayton</div>
+    <div class="verse indent2">As if she’d been stung!</div>
+    <div class="verse indent2">A-curlin’ right up on his shoulder an’ purrin’</div>
+    <div class="verse indent2">The only live thing in the room that was stirrin’.</div>
+    <div class="verse indent2">Oh I tell you that kitten was more than just—cat!</div>
+    <div class="verse indent2">Love was usin’ that kitten,</div>
+    <div class="verse indent2">I felt sure of that.</div>
+    <div class="verse indent2">Back an’ forth she went playin’</div>
+    <div class="verse indent2">Between those old twins</div>
+    <div class="verse indent2">An’ the room still so quiet you might have heard pins</div>
+    <div class="verse indent2">A-droppin’. I burst right out.</div>
+    <div class="verse indent2">“Luddy” I said “You two men! Why that kitten’s</div>
+    <div class="verse indent2">Possessed of the dead!</div>
+    <div class="verse indent2">If you could just see yourselves sittin’ up there</div>
+    <div class="verse indent2">Like two graven images—each on a chair—</div>
+    <div class="verse indent2">An’ that little kitten a-tryin’ to play</div>
+    <div class="verse indent2">With you both—I’m clean crazy!</div>
+    <div class="verse indent2">I <i>will</i> go away!”</div>
+    <div class="verse indent2">I just shrieked it out an’ they both spoke at once—</div>
+    <div class="verse indent2">“Now now my good woman—</div>
+    <div class="verse indent2">Come don’t be a dunce!”</div>
+    <div class="verse indent2">An’ I said</div>
+    <div class="verse indent2">“Well I’m neither a dunce nor—a twin!</div>
+    <div class="verse indent2">But if there’s names goin’ why I’ll just begin</div>
+    <div class="verse indent2">An’ I’ll say you’re twin dunces!”</div>
+    <div class="verse indent2">Then sudden I saw</div>
+    <div class="verse indent2">Them both smile—at the kitten!</div>
+    <div class="verse indent2">It felt like a thaw</div>
+    <div class="verse indent2">After ice—up in Greenland.</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">Oh yes—they’re both well.</div>
+    <div class="verse indent2">An’ the comfort they’re takin’</div>
+    <div class="verse indent2">I’ve no words to tell.</div>
+  </div>
+</div>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_80">[Pg 80]</span></p>
+<h3 class="nobreak" id="BOB_COONING">BOB COONING</h3>
+</div>
+
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">“B</span><span class="close18">OB</span> Cooning the giant’s come home to die”—</div>
+    <div class="verse indent2">So the village folk say</div>
+    <div class="verse indent2">To-day.</div>
+    <div class="verse indent2">They shake their heads and they peer and spy,</div>
+    <div class="verse indent2">And they draw in their breaths—</div>
+    <div class="verse indent2">“Dear—Dear!” they sigh;</div>
+    <div class="verse indent2">And they cook him dainties</div>
+    <div class="verse indent2">And wonder why</div>
+    <div class="verse indent2">The Lord ever made, under His kind sky,</div>
+    <div class="verse indent2">Bob Cooning!</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent6">Bob Cooning the giant was only a boy,</div>
+    <div class="verse indent6">Like Harry or Tom or Jim or Dick,</div>
+    <div class="verse indent6">But one that the other boys couldn’t lick.</div>
+    <div class="verse indent6">Never a clean fair fight for Bob</div>
+    <div class="verse indent6">As boy to boy. “That’s a dirty trick—</div>
+    <div class="verse indent6">To hit a fellow just half your size!”</div>
+    <div class="verse indent6">I’ve seen the tears in Bob’s big blue eyes.</div>
+    <div class="verse indent6">“Give me a man to fight!” he’d say,</div>
+    <div class="verse indent6">And they’d jeer—“You’ll keep till another day!”</div>
+    <div class="verse indent6">Poor Bob would turn and slouch from the place</div>
+    <div class="verse indent6">And lie face down in tall “Queen Anne’s lace”</div>
+    <div class="verse indent6">And sob and sob to the cool brown earth,</div>
+    <div class="verse indent6">Far off from the sound of his playmates’ mirth—</div>
+    <div class="verse indent6">Poor Bob Cooning!</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent6">And he could not learn to cipher or read,</div>
+    <div class="verse indent6">And he felt himself of a different breed.</div>
+    <div class="verse indent6">He ate so much, and his clothes cost more</div>
+    <div class="verse indent6">Than any one else, till his father swore.</div><span class="pagenum" id="Page_81">[Pg 81]</span>
+    <div class="verse indent6">He slouched and stooped through the highest door.</div>
+    <div class="verse indent6">His poor little mother wailed and cried—</div>
+    <div class="verse indent6">But his wise old Granny only sighed</div>
+    <div class="verse indent6">“It’s the good God made him an’ He’ll provide.”</div>
+    <div class="verse indent6">How Bob Cooning cried when his Granny died!</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent6">Then one night when the village was racked and thrilled</div>
+    <div class="verse indent6">With the circus tents, and the beast cries shrilled</div>
+    <div class="verse indent6">From the hot green meadow, Bob Cooning went</div>
+    <div class="verse indent6">With a sharp-faced man to a certain tent.</div>
+    <div class="verse indent6">Tom, Harry and Dick saw the last gay train</div>
+    <div class="verse indent6">Pull out, but they never saw Bob again</div>
+    <div class="verse indent6">Until, one day, through our old church door,</div>
+    <div class="verse indent6">At the morning service, strode Bob once more</div>
+    <div class="verse indent6">With his head thrown back, and a smile as bland</div>
+    <div class="verse indent6">As the great glass ring on his vast pink hand.</div>
+    <div class="verse indent6">How the people young and old did grin</div>
+    <div class="verse indent6">As the handsome giant came walking in</div>
+    <div class="verse indent6">With his sporty suit of a fine light check,</div>
+    <div class="verse indent6">And the great starched collar about his neck!</div>
+    <div class="verse indent6">How he dwarfed our poor little house of God!</div>
+    <div class="verse indent6">Dr. Smitters was preaching on Aaron’s rod,</div>
+    <div class="verse indent6">And how it budded in miracle bloom.</div>
+    <div class="verse indent6">“Say! With Bob in a church there ain’t hardly room</div>
+    <div class="verse indent6">For us and the minister both!” So Jim</div>
+    <div class="verse indent6">The wag, so dapper and keen and slim</div>
+    <div class="verse indent6">Whispered to Pollie—but Pollie just sighed.</div>
+    <div class="verse indent6">“Oh my, but Bob’s splendid!” Pollie replied.</div><span class="pagenum" id="Page_82">[Pg 82]</span>
+    <div class="verse indent6">That winter Bob Cooning was just like a king!</div>
+    <div class="verse indent6">His father boasted “A darn fine thing</div>
+    <div class="verse indent6">For us, that our son went away that day!</div>
+    <div class="verse indent6">I tell you he’s made the show business pay.</div>
+    <div class="verse indent6">He’s heaps of cash an’ he says he’ll stay</div>
+    <div class="verse indent6">Here a while—but he may go any day.”</div>
+    <div class="verse indent6">When the glamour wore off the wise heads said</div>
+    <div class="verse indent6">“He’s stupid as ever, with wits like lead.”</div>
+    <div class="verse indent6">And more than one mother wished he’d go—</div>
+    <div class="verse indent6">“So handsome—he does turn the girls’ heads so!”</div>
+    <div class="verse indent6">And finally, all in the sweet green May,</div>
+    <div class="verse indent6">He went off again on a “Circus Day.”</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent6">And when he came back for the second time—</div>
+    <div class="verse indent6">This <i>isn’t</i> a story to put in rhyme—</div>
+    <div class="verse indent6">Now is it?—And yet if the Lord saw fit</div>
+    <div class="verse indent6">To make a giant and jest a bit</div>
+    <div class="verse indent6">Right out here in our country-side</div>
+    <div class="verse indent6">With every one seeing him far and wide—</div>
+    <div class="verse indent6">Well it seems to me that a rhyme goes fine</div>
+    <div class="verse indent6">For this pitiful, circus-like tale of mine—</div>
+    <div class="verse indent6">Of giant Bob and his coming home</div>
+    <div class="verse indent6">Never again with his shows to roam.</div>
+    <div class="verse indent6">“He’s fadin’ out like a wisp o’ hay”</div>
+    <div class="verse indent6">Said his poor little mother to me to-day.</div>
+    <div class="verse indent6">“He smiles at me an’ says ‘Ma—I’m small!</div>
+    <div class="verse indent6">An’ I always thought I was awful tall!’</div>
+    <div class="verse indent6">An’ he’s just as happy as he can be</div>
+    <div class="verse indent6">When he thinks he’s a wee boy—deary me!”</div>
+    <div class="verse indent6">And I said “Mrs. Cooning—now don’t you fret.</div>
+    <div class="verse indent6">I guess God will know how to handle him yet.”</div>
+    <div class="verse indent6">And she said “Well—he <i>has</i> been a famous man</div><span class="pagenum" id="Page_83">[Pg 83]</span>
+    <div class="verse indent6">In them shows!”—So—we all do the best we can.</div>
+    <div class="verse indent6">He’s a terrible problem to bathe and lift,</div>
+    <div class="verse indent6">But we’ve got it arranged, in a “double shift.”</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent10">Bob Cooning, the giant, has come home to die.</div>
+    <div class="verse indent10">And the God that made him—</div>
+    <div class="verse indent10">He must know why!</div>
+  </div>
+</div>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_84">[Pg 84]</span></p>
+<h3 class="nobreak" id="SYMPATHY">SYMPATHY</h3>
+</div>
+
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">T</span><span class="close10">HAT </span>ugly pumpkin-coloured house</div>
+    <div class="verse indent2">That I saw from the train—</div>
+    <div class="verse indent2">I have wondered about the minds of the people inside</div>
+    <div class="verse indent2">But I wonder in vain.</div>
+    <div class="verse indent2">Did they <i>choose</i> that paint?</div>
+    <div class="verse indent2">Or perhaps it was brought them to buy—</div>
+    <div class="verse indent2">Oh I hope now they’ve got it all done that they like it—</div>
+    <div class="verse indent2">And don’t just have to try.</div>
+    <div class="verse indent2">Oh I hope that it shines there for them</div>
+    <div class="verse indent2">In their sunny green fields</div>
+    <div class="verse indent2">Like a lantern at night—</div>
+    <div class="verse indent2">And I hope that on dull rainy days they both say to each other</div>
+    <div class="verse indent2">“<i>Don’t</i> it look nice and bright?”</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">Oh I think I shall never forget them</div>
+    <div class="verse indent2">In their new-painted house!</div>
+  </div>
+</div>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_85">[Pg 85]</span></p>
+<h3 class="nobreak" id="FALSE_DAWN">FALSE DAWN</h3>
+</div>
+
+
+<p class="center">(1)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">M</span><span class="close18">Y </span>apple trees have blossomed in a night,</div>
+    <div class="verse indent2">And pale green moonlight bathes their rose and white</div>
+    <div class="verse indent2">With a strange wine that makes the pulses throb.</div>
+    <div class="verse indent2">A sleepy robin now mistakes the light,</div>
+    <div class="verse indent2">And his soft doubting note sounds like a sob</div>
+    <div class="verse indent2">Voicing the thought that draws my heart-strings tight.</div>
+  </div>
+<p class="center">(2)</p>
+  <div class="stanza">
+    <div class="verse indent2">What Life could give you is not yours to take</div>
+    <div class="verse indent2">Nor mine to give—and yet to-night I wake</div>
+    <div class="verse indent2">Remembering your giving. But the note</div>
+    <div class="verse indent2">Of that moon-haunted robin must not shake</div>
+    <div class="verse indent2">My calm belief that you—austere, remote—</div>
+    <div class="verse indent2">Need nothing I can ever mar or make.</div>
+  </div>
+</div>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_86">[Pg 86]</span></p>
+<h3 class="nobreak" id="THE_WITCH">THE WITCH</h3>
+</div>
+
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">T</span><span class="close10">HEY—the </span>good people—heard her song</div>
+    <div class="verse indent2">From out of the wood that grows thick in the valley.</div>
+    <div class="verse indent2">She had climbed to the hill-top that rises, blue,</div>
+    <div class="verse indent2">Out of the wood as one comes through.</div>
+    <div class="verse indent2">Grass on the hill-top waving long,</div>
+    <div class="verse indent2">And a smooth gray stone where she kept her tally</div>
+    <div class="verse indent2">Of the years and the days in the wild singing wood.</div>
+    <div class="verse indent2">She lived her life as a virgin should</div>
+    <div class="verse indent2">Till the people heard her song.</div>
+    <div class="verse indent2">They climbed the hill and they frowned and said</div>
+    <div class="verse indent2">“We liked your songs that we heard in the valley.</div>
+    <div class="verse indent2">We don’t like that one you are singing to-day!</div>
+    <div class="verse indent2">It’s mad and it’s bad and it’s much too gay!</div>
+    <div class="verse indent2">But we’ve brought you some meat and bread.”</div>
+    <div class="verse indent2">Then they saw on the stone her tally,</div>
+    <div class="verse indent2">And they shook their heads ... “Look here! Look here!</div>
+    <div class="verse indent2">Oh it’s very very plain she is queer ... mad queer!”</div>
+    <div class="verse indent2">And they took her away on that self-same day,</div>
+    <div class="verse indent2">Though she fought till she lay half-dead.</div>
+    <div class="verse indent2">Now all she had written on the smooth gray stone</div>
+    <div class="verse indent2">Were the strange magic things (O the deep blue wings!)</div>
+    <div class="verse indent2">That happen in a wild, singing wood.</div>
+    <div class="verse indent2">But they said “She hasn’t lived as a virgin should ...</div>
+    <div class="verse indent2">When she dies she shall lie on the hill for good.”</div>
+    <div class="verse indent2">And they laid her there, with her soft black hair</div>
+    <div class="verse indent2">Strained back from her dead white brow.</div>
+    <div class="verse indent2">“We will set at her head for a tombstone now</div><span class="pagenum" id="Page_87">[Pg 87]</span>
+    <div class="verse indent2">This stone where she kept mad tally!”</div>
+    <div class="verse indent2">But she laughed as she sped from that hill-top bed</div>
+    <div class="verse indent2">And roamed through the wood and the valley ...</div>
+    <div class="verse indent6">“Oh wild blue wings I am free” (sang she)</div>
+    <div class="verse indent6">“Now I own the singing wood and the wood owns me,</div>
+    <div class="verse indent6">Oh the hill-top too and the valley!</div>
+    <div class="verse indent6">They gave back my stone and they’ve left me alone ...</div>
+    <div class="verse indent6">I am free! I am free! I am free!”</div>
+  </div>
+</div>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_88">[Pg 88]</span></p>
+<h3 class="nobreak" id="THE_POST_BOX">THE POST BOX</h3>
+</div>
+
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">T</span><span class="close10">HERE </span>is something very wonderful</div>
+    <div class="verse indent2">In the posting of a letter—</div>
+    <div class="verse indent2">So few acts have the clarity of this.</div>
+    <div class="verse indent2">A clear-cut, forceful and far-reaching act</div>
+    <div class="verse indent2">Of pain or bliss,</div>
+    <div class="verse indent2">So it may be:</div>
+    <div class="verse indent2">Irrevocable in the subtlest way—</div>
+    <div class="verse indent2">To-day—</div>
+    <div class="verse indent2">You see?</div>
+    <div class="verse indent2">The post box flashes red</div>
+    <div class="verse indent2">A sign and seal of dominating law</div>
+    <div class="verse indent2">Through April green, or hard and glittering white</div>
+    <div class="verse indent2">Of winter snow.</div>
+    <div class="verse indent2">One may have vacillated day and night,</div>
+    <div class="verse indent2">Longing to end the turmoil, stress and strain,</div>
+    <div class="verse indent2">Questioning what is best or wise or right—</div>
+    <div class="verse indent2">And then post box gleams red!</div>
+    <div class="verse indent2">Cutting clean through the world of indecision</div>
+    <div class="verse indent2">Like a shout</div>
+    <div class="verse indent2">Of triumph!</div>
+    <div class="verse indent2">Then a soft flat thud—</div>
+    <div class="verse indent2">Like tiny echo floating out</div>
+    <div class="verse indent2">From a beyond of peace.</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">The letter falls—</div>
+    <div class="verse indent2">Decisive act, prisoned in four red walls.</div>
+  </div>
+</div>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_89">[Pg 89]</span></p>
+<h3 class="nobreak" id="SONG">SONG</h3>
+</div>
+
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">D</span><span class="close15">EW </span>...</div>
+    <div class="verse indent2">Delicate lanterns, star-kindled anew,</div>
+    <div class="verse indent2">And a sword of silver</div>
+    <div class="verse indent2">Brave, shining and still ...</div>
+    <div class="verse indent2">With roses—deep roses of crimson—</div>
+    <div class="verse indent2">And, sheathing the blade,</div>
+    <div class="verse indent2">Greek hyacinths blue.</div>
+    <div class="verse indent2">Ah ... the treasures, the symbols, we laid</div>
+    <div class="verse indent2">In the deep cold mould on the hill</div>
+    <div class="verse indent2">With the body of you!...</div>
+    <div class="verse indent2">But over the mould there flew</div>
+    <div class="verse indent2">Something wingéd that earth could not hold—</div>
+    <div class="verse indent2">You!...</div>
+  </div>
+</div>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_90">[Pg 90]</span></p>
+<h3 class="nobreak" id="BREAD_AND_FIRE">BREAD AND FIRE</h3>
+</div>
+
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">B</span><span class="close15">ELOVED </span>Friend,</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">I write this verse to you</div>
+    <div class="verse indent2">As if it were a letter I could send.</div>
+    <div class="verse indent2">It seems to me sometimes my heart slips through</div>
+    <div class="verse indent2">The purple barriers between us two,</div>
+    <div class="verse indent2">And finds again your fire, your sacred bread:</div>
+    <div class="verse indent2">Their warmth and wholesome sweetness ...</div>
+    <div class="verse indent2">Fire and Bread!</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">Beloved, these symbols nourish Life anew ...</div>
+    <div class="verse indent2">You are not dead!</div>
+  </div>
+</div>
+</div>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_91">[Pg 91]</span></p>
+<h3 class="nobreak" id="MOMENT_MUSICAL">“MOMENT MUSICAL”</h3>
+</div>
+
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2"><span class="dropcap">B</span><span class="close15">LUE </span>moth!...</div>
+    <div class="verse indent2">Tiny, pulsating thing ...</div>
+    <div class="verse indent2">You and I met upon a rocky hill.</div>
+    <div class="verse indent2">I paused ...</div>
+    <div class="verse indent2">You paused, and poised</div>
+    <div class="verse indent2">Blue,</div>
+    <div class="verse indent2">Blue on a dark stone:</div>
+    <div class="verse indent2">And all the vibrant sunshine in the world</div>
+    <div class="verse indent2">Was caught for the sparkle</div>
+    <div class="verse indent2">On your tiny wings ...</div>
+    <div class="verse indent2">Blue moth!</div>
+  </div>
+</div>
+</div>
+
+<figure class="figcenter illowp15" id="i092" style="max-width: 22.5em;">
+  <img class="w100" src="images/i092.jpg" alt="
+WARWICK BROS. &amp; RUTTER LIMITED TORONTO
+PRINTERS &amp; BOOKBINDERS">
+</figure>
+
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter transnote">
+<h2 class="nobreak" id="Transcribers_Notes">Transcriber’s Notes</h2>
+
+<p>Obvious typographical errors have been silently corrected. Variations
+in hyphenation and accents have been standardised but all other
+spelling and punctuation remains unchanged.
+</p>
+</div>
+<div style='display:block; margin-top:4em'>*** END OF THE PROJECT GUTENBERG EBOOK DREAM TAPESTRIES ***</div>
+<div style='text-align:left'>
+
+<div style='display:block; margin:1em 0'>
+Updated editions will replace the previous one&#8212;the old editions will
+be renamed.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Creating the works from print editions not protected by U.S. copyright
+law means that no one owns a United States copyright in these works,
+so the Foundation (and you!) can copy and distribute it in the United
+States without permission and without paying copyright
+royalties. Special rules, set forth in the General Terms of Use part
+of this license, apply to copying and distributing Project
+Gutenberg&#8482; electronic works to protect the PROJECT GUTENBERG&#8482;
+concept and trademark. Project Gutenberg is a registered trademark,
+and may not be used if you charge for an eBook, except by following
+the terms of the trademark license, including paying royalties for use
+of the Project Gutenberg trademark. If you do not charge anything for
+copies of this eBook, complying with the trademark license is very
+easy. You may use this eBook for nearly any purpose such as creation
+of derivative works, reports, performances and research. Project
+Gutenberg eBooks may be modified and printed and given away&#8212;you may
+do practically ANYTHING in the United States with eBooks not protected
+by U.S. copyright law. Redistribution is subject to the trademark
+license, especially commercial redistribution.
+</div>
+
+<div style='margin-top:1em; font-size:1.1em; text-align:center'>START: FULL LICENSE</div>
+<div style='text-align:center;font-size:0.9em'>THE FULL PROJECT GUTENBERG LICENSE</div>
+<div style='text-align:center;font-size:0.9em'>PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK</div>
+
+<div style='display:block; margin:1em 0'>
+To protect the Project Gutenberg&#8482; mission of promoting the free
+distribution of electronic works, by using or distributing this work
+(or any other work associated in any way with the phrase &#8220;Project
+Gutenberg&#8221;), you agree to comply with all the terms of the Full
+Project Gutenberg&#8482; License available with this file or online at
+www.gutenberg.org/license.
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 1. General Terms of Use and Redistributing Project Gutenberg&#8482; electronic works
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.A. By reading or using any part of this Project Gutenberg&#8482;
+electronic work, you indicate that you have read, understand, agree to
+and accept all the terms of this license and intellectual property
+(trademark/copyright) agreement. If you do not agree to abide by all
+the terms of this agreement, you must cease using and return or
+destroy all copies of Project Gutenberg&#8482; electronic works in your
+possession. If you paid a fee for obtaining a copy of or access to a
+Project Gutenberg&#8482; electronic work and you do not agree to be bound
+by the terms of this agreement, you may obtain a refund from the person
+or entity to whom you paid the fee as set forth in paragraph 1.E.8.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.B. &#8220;Project Gutenberg&#8221; is a registered trademark. It may only be
+used on or associated in any way with an electronic work by people who
+agree to be bound by the terms of this agreement. There are a few
+things that you can do with most Project Gutenberg&#8482; electronic works
+even without complying with the full terms of this agreement. See
+paragraph 1.C below. There are a lot of things you can do with Project
+Gutenberg&#8482; electronic works if you follow the terms of this
+agreement and help preserve free future access to Project Gutenberg&#8482;
+electronic works. See paragraph 1.E below.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.C. The Project Gutenberg Literary Archive Foundation (&#8220;the
+Foundation&#8221; or PGLAF), owns a compilation copyright in the collection
+of Project Gutenberg&#8482; electronic works. Nearly all the individual
+works in the collection are in the public domain in the United
+States. If an individual work is unprotected by copyright law in the
+United States and you are located in the United States, we do not
+claim a right to prevent you from copying, distributing, performing,
+displaying or creating derivative works based on the work as long as
+all references to Project Gutenberg are removed. Of course, we hope
+that you will support the Project Gutenberg&#8482; mission of promoting
+free access to electronic works by freely sharing Project Gutenberg&#8482;
+works in compliance with the terms of this agreement for keeping the
+Project Gutenberg&#8482; name associated with the work. You can easily
+comply with the terms of this agreement by keeping this work in the
+same format with its attached full Project Gutenberg&#8482; License when
+you share it without charge with others.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.D. The copyright laws of the place where you are located also govern
+what you can do with this work. Copyright laws in most countries are
+in a constant state of change. If you are outside the United States,
+check the laws of your country in addition to the terms of this
+agreement before downloading, copying, displaying, performing,
+distributing or creating derivative works based on this work or any
+other Project Gutenberg&#8482; work. The Foundation makes no
+representations concerning the copyright status of any work in any
+country other than the United States.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E. Unless you have removed all references to Project Gutenberg:
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.1. The following sentence, with active links to, or other
+immediate access to, the full Project Gutenberg&#8482; License must appear
+prominently whenever any copy of a Project Gutenberg&#8482; work (any work
+on which the phrase &#8220;Project Gutenberg&#8221; appears, or with which the
+phrase &#8220;Project Gutenberg&#8221; is associated) is accessed, displayed,
+performed, viewed, copied or distributed:
+</div>
+
+<blockquote>
+  <div style='display:block; margin:1em 0'>
+    This eBook is for the use of anyone anywhere in the United States and most
+    other parts of the world at no cost and with almost no restrictions
+    whatsoever. You may copy it, give it away or re-use it under the terms
+    of the Project Gutenberg License included with this eBook or online
+    at <a href="https://www.gutenberg.org">www.gutenberg.org</a>. If you
+    are not located in the United States, you will have to check the laws
+    of the country where you are located before using this eBook.
+  </div>
+</blockquote>
+
+<div style='display:block; margin:1em 0'>
+1.E.2. If an individual Project Gutenberg&#8482; electronic work is
+derived from texts not protected by U.S. copyright law (does not
+contain a notice indicating that it is posted with permission of the
+copyright holder), the work can be copied and distributed to anyone in
+the United States without paying any fees or charges. If you are
+redistributing or providing access to a work with the phrase &#8220;Project
+Gutenberg&#8221; associated with or appearing on the work, you must comply
+either with the requirements of paragraphs 1.E.1 through 1.E.7 or
+obtain permission for the use of the work and the Project Gutenberg&#8482;
+trademark as set forth in paragraphs 1.E.8 or 1.E.9.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.3. If an individual Project Gutenberg&#8482; electronic work is posted
+with the permission of the copyright holder, your use and distribution
+must comply with both paragraphs 1.E.1 through 1.E.7 and any
+additional terms imposed by the copyright holder. Additional terms
+will be linked to the Project Gutenberg&#8482; License for all works
+posted with the permission of the copyright holder found at the
+beginning of this work.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.4. Do not unlink or detach or remove the full Project Gutenberg&#8482;
+License terms from this work, or any files containing a part of this
+work or any other work associated with Project Gutenberg&#8482;.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.5. Do not copy, display, perform, distribute or redistribute this
+electronic work, or any part of this electronic work, without
+prominently displaying the sentence set forth in paragraph 1.E.1 with
+active links or immediate access to the full terms of the Project
+Gutenberg&#8482; License.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.6. You may convert to and distribute this work in any binary,
+compressed, marked up, nonproprietary or proprietary form, including
+any word processing or hypertext form. However, if you provide access
+to or distribute copies of a Project Gutenberg&#8482; work in a format
+other than &#8220;Plain Vanilla ASCII&#8221; or other format used in the official
+version posted on the official Project Gutenberg&#8482; website
+(www.gutenberg.org), you must, at no additional cost, fee or expense
+to the user, provide a copy, a means of exporting a copy, or a means
+of obtaining a copy upon request, of the work in its original &#8220;Plain
+Vanilla ASCII&#8221; or other form. Any alternate format must include the
+full Project Gutenberg&#8482; License as specified in paragraph 1.E.1.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.7. Do not charge a fee for access to, viewing, displaying,
+performing, copying or distributing any Project Gutenberg&#8482; works
+unless you comply with paragraph 1.E.8 or 1.E.9.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.8. You may charge a reasonable fee for copies of or providing
+access to or distributing Project Gutenberg&#8482; electronic works
+provided that:
+</div>
+
+<div style='margin-left:0.7em;'>
+    <div style='text-indent:-0.7em'>
+        &#8226; You pay a royalty fee of 20% of the gross profits you derive from
+        the use of Project Gutenberg&#8482; works calculated using the method
+        you already use to calculate your applicable taxes. The fee is owed
+        to the owner of the Project Gutenberg&#8482; trademark, but he has
+        agreed to donate royalties under this paragraph to the Project
+        Gutenberg Literary Archive Foundation. Royalty payments must be paid
+        within 60 days following each date on which you prepare (or are
+        legally required to prepare) your periodic tax returns. Royalty
+        payments should be clearly marked as such and sent to the Project
+        Gutenberg Literary Archive Foundation at the address specified in
+        Section 4, &#8220;Information about donations to the Project Gutenberg
+        Literary Archive Foundation.&#8221;
+    </div>
+
+    <div style='text-indent:-0.7em'>
+        &#8226; You provide a full refund of any money paid by a user who notifies
+        you in writing (or by e-mail) within 30 days of receipt that s/he
+        does not agree to the terms of the full Project Gutenberg&#8482;
+        License. You must require such a user to return or destroy all
+        copies of the works possessed in a physical medium and discontinue
+        all use of and all access to other copies of Project Gutenberg&#8482;
+        works.
+    </div>
+
+    <div style='text-indent:-0.7em'>
+        &#8226; You provide, in accordance with paragraph 1.F.3, a full refund of
+        any money paid for a work or a replacement copy, if a defect in the
+        electronic work is discovered and reported to you within 90 days of
+        receipt of the work.
+    </div>
+
+    <div style='text-indent:-0.7em'>
+        &#8226; You comply with all other terms of this agreement for free
+        distribution of Project Gutenberg&#8482; works.
+    </div>
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.9. If you wish to charge a fee or distribute a Project
+Gutenberg&#8482; electronic work or group of works on different terms than
+are set forth in this agreement, you must obtain permission in writing
+from the Project Gutenberg Literary Archive Foundation, the manager of
+the Project Gutenberg&#8482; trademark. Contact the Foundation as set
+forth in Section 3 below.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.1. Project Gutenberg volunteers and employees expend considerable
+effort to identify, do copyright research on, transcribe and proofread
+works not protected by U.S. copyright law in creating the Project
+Gutenberg&#8482; collection. Despite these efforts, Project Gutenberg&#8482;
+electronic works, and the medium on which they may be stored, may
+contain &#8220;Defects,&#8221; such as, but not limited to, incomplete, inaccurate
+or corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged disk or
+other medium, a computer virus, or computer codes that damage or
+cannot be read by your equipment.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.2. LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the &#8220;Right
+of Replacement or Refund&#8221; described in paragraph 1.F.3, the Project
+Gutenberg Literary Archive Foundation, the owner of the Project
+Gutenberg&#8482; trademark, and any other party distributing a Project
+Gutenberg&#8482; electronic work under this agreement, disclaim all
+liability to you for damages, costs and expenses, including legal
+fees. YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
+LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
+PROVIDED IN PARAGRAPH 1.F.3. YOU AGREE THAT THE FOUNDATION, THE
+TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
+LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
+INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
+DAMAGE.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.3. LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
+defect in this electronic work within 90 days of receiving it, you can
+receive a refund of the money (if any) you paid for it by sending a
+written explanation to the person you received the work from. If you
+received the work on a physical medium, you must return the medium
+with your written explanation. The person or entity that provided you
+with the defective work may elect to provide a replacement copy in
+lieu of a refund. If you received the work electronically, the person
+or entity providing it to you may choose to give you a second
+opportunity to receive the work electronically in lieu of a refund. If
+the second copy is also defective, you may demand a refund in writing
+without further opportunities to fix the problem.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.4. Except for the limited right of replacement or refund set forth
+in paragraph 1.F.3, this work is provided to you &#8216;AS-IS&#8217;, WITH NO
+OTHER WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PURPOSE.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.5. Some states do not allow disclaimers of certain implied
+warranties or the exclusion or limitation of certain types of
+damages. If any disclaimer or limitation set forth in this agreement
+violates the law of the state applicable to this agreement, the
+agreement shall be interpreted to make the maximum disclaimer or
+limitation permitted by the applicable state law. The invalidity or
+unenforceability of any provision of this agreement shall not void the
+remaining provisions.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.6. INDEMNITY - You agree to indemnify and hold the Foundation, the
+trademark owner, any agent or employee of the Foundation, anyone
+providing copies of Project Gutenberg&#8482; electronic works in
+accordance with this agreement, and any volunteers associated with the
+production, promotion and distribution of Project Gutenberg&#8482;
+electronic works, harmless from all liability, costs and expenses,
+including legal fees, that arise directly or indirectly from any of
+the following which you do or cause to occur: (a) distribution of this
+or any Project Gutenberg&#8482; work, (b) alteration, modification, or
+additions or deletions to any Project Gutenberg&#8482; work, and (c) any
+Defect you cause.
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 2. Information about the Mission of Project Gutenberg&#8482;
+</div>
+
+<div style='display:block; margin:1em 0'>
+Project Gutenberg&#8482; is synonymous with the free distribution of
+electronic works in formats readable by the widest variety of
+computers including obsolete, old, middle-aged and new computers. It
+exists because of the efforts of hundreds of volunteers and donations
+from people in all walks of life.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Volunteers and financial support to provide volunteers with the
+assistance they need are critical to reaching Project Gutenberg&#8482;&#8217;s
+goals and ensuring that the Project Gutenberg&#8482; collection will
+remain freely available for generations to come. In 2001, the Project
+Gutenberg Literary Archive Foundation was created to provide a secure
+and permanent future for Project Gutenberg&#8482; and future
+generations. To learn more about the Project Gutenberg Literary
+Archive Foundation and how your efforts and donations can help, see
+Sections 3 and 4 and the Foundation information page at www.gutenberg.org.
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 3. Information about the Project Gutenberg Literary Archive Foundation
+</div>
+
+<div style='display:block; margin:1em 0'>
+The Project Gutenberg Literary Archive Foundation is a non-profit
+501(c)(3) educational corporation organized under the laws of the
+state of Mississippi and granted tax exempt status by the Internal
+Revenue Service. The Foundation&#8217;s EIN or federal tax identification
+number is 64-6221541. Contributions to the Project Gutenberg Literary
+Archive Foundation are tax deductible to the full extent permitted by
+U.S. federal laws and your state&#8217;s laws.
+</div>
+
+<div style='display:block; margin:1em 0'>
+The Foundation&#8217;s business office is located at 809 North 1500 West,
+Salt Lake City, UT 84116, (801) 596-1887. Email contact links and up
+to date contact information can be found at the Foundation&#8217;s website
+and official page at www.gutenberg.org/contact
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 4. Information about Donations to the Project Gutenberg Literary Archive Foundation
+</div>
+
+<div style='display:block; margin:1em 0'>
+Project Gutenberg&#8482; depends upon and cannot survive without widespread
+public support and donations to carry out its mission of
+increasing the number of public domain and licensed works that can be
+freely distributed in machine-readable form accessible by the widest
+array of equipment including outdated equipment. Many small donations
+($1 to $5,000) are particularly important to maintaining tax exempt
+status with the IRS.
+</div>
+
+<div style='display:block; margin:1em 0'>
+The Foundation is committed to complying with the laws regulating
+charities and charitable donations in all 50 states of the United
+States. Compliance requirements are not uniform and it takes a
+considerable effort, much paperwork and many fees to meet and keep up
+with these requirements. We do not solicit donations in locations
+where we have not received written confirmation of compliance. To SEND
+DONATIONS or determine the status of compliance for any particular state
+visit <a href="https://www.gutenberg.org/donate/">www.gutenberg.org/donate</a>.
+</div>
+
+<div style='display:block; margin:1em 0'>
+While we cannot and do not solicit contributions from states where we
+have not met the solicitation requirements, we know of no prohibition
+against accepting unsolicited donations from donors in such states who
+approach us with offers to donate.
+</div>
+
+<div style='display:block; margin:1em 0'>
+International donations are gratefully accepted, but we cannot make
+any statements concerning tax treatment of donations received from
+outside the United States. U.S. laws alone swamp our small staff.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Please check the Project Gutenberg web pages for current donation
+methods and addresses. Donations are accepted in a number of other
+ways including checks, online payments and credit card donations. To
+donate, please visit: www.gutenberg.org/donate
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 5. General Information About Project Gutenberg&#8482; electronic works
+</div>
+
+<div style='display:block; margin:1em 0'>
+Professor Michael S. Hart was the originator of the Project
+Gutenberg&#8482; concept of a library of electronic works that could be
+freely shared with anyone. For forty years, he produced and
+distributed Project Gutenberg&#8482; eBooks with only a loose network of
+volunteer support.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Project Gutenberg&#8482; eBooks are often created from several printed
+editions, all of which are confirmed as not protected by copyright in
+the U.S. unless a copyright notice is included. Thus, we do not
+necessarily keep eBooks in compliance with any particular paper
+edition.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Most people start at our website which has the main PG search
+facility: <a href="https://www.gutenberg.org">www.gutenberg.org</a>.
+</div>
+
+<div style='display:block; margin:1em 0'>
+This website includes information about Project Gutenberg&#8482;,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.
+</div>
+
+</div>
+</body>
+</html>
